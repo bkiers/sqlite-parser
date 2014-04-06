@@ -57,9 +57,9 @@ public class Main {
 
         // The select-statement to be parsed.
         String sql = "SELECT log AS x FROM t1 \n" +
-                "GROUP BY x\n" +
-                "HAVING count(*) >= 4 \n" +
-                "ORDER BY max(n) + 0";
+                "GROUP BY x                   \n" +
+                "HAVING count(*) >= 4         \n" +
+                "ORDER BY max(n) + 0          \n";
 
         // Create a lexer and parser for the input.
         SQLiteLexer lexer = new SQLiteLexer(new ANTLRInputStream(sql));
