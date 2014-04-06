@@ -25,7 +25,7 @@ mvn clean test
 
 ## Example
 
-Let's say you would like to record all the names of functions used in a
+Let's say you would like to record all the names of functions used in an
 select-statement:
 
 ```sql
