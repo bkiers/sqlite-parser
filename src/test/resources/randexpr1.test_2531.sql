@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT (abs(case when exists(select 1 from t1 where b not between ~case when (t1.e-(c-t1.c) | t1.a) in (select abs(~((min(t1.f) | cast(avg(c) AS integer))*(min(b))-count(distinct 19)*min(e)) |  -((count(*))))-cast(avg(d) AS integer) from t1 union select  -count(distinct t1.a) from t1) or f>a then 11 else e end*11 and t1.e) then t1.e when  -17<11 then 17 else t1.a end)/abs(a)) FROM t1 WHERE NOT (c<=19)}
+SELECT (abs(case when exists(select 1 from t1 where b not between ~case when (t1.e-(c-t1.c) | t1.a) in (select abs(~((min(t1.f) | cast(avg(c) AS integer))*(min(b))-count(distinct 19)*min(e)) |  -((count(*))))-cast(avg(d) AS integer) from t1 union select  -count(distinct t1.a) from t1) or f>a then 11 else e end*11 and t1.e) then t1.e when  -17<11 then 17 else t1.a end)/abs(a)) FROM t1 WHERE NOT (c<=19)

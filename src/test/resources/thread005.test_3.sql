@@ -1,0 +1,10 @@
+-- thread005.test
+-- 
+-- execsql {
+--     CREATE TABLE aux.t1(a INTEGER PRIMARY KEY, b UNIQUE);
+--     INSERT INTO t1 VALUES(1, 1);
+--     INSERT INTO t1 VALUES(2, 2);
+-- }
+CREATE TABLE aux.t1(a INTEGER PRIMARY KEY, b UNIQUE);
+INSERT INTO t1 VALUES(1, 1);
+INSERT INTO t1 VALUES(2, 2);

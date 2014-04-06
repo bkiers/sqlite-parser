@@ -1,0 +1,14 @@
+-- types2.test
+-- 
+-- execsql {
+--   CREATE TABLE t2(i INTEGER, n NUMERIC, t TEXT, o XBLOBY);
+--   CREATE INDEX t2i1 ON t2(i);
+--   CREATE INDEX t2i2 ON t2(n);
+--   CREATE INDEX t2i3 ON t2(t);
+--   CREATE INDEX t2i4 ON t2(o);
+-- }
+CREATE TABLE t2(i INTEGER, n NUMERIC, t TEXT, o XBLOBY);
+CREATE INDEX t2i1 ON t2(i);
+CREATE INDEX t2i2 ON t2(n);
+CREATE INDEX t2i3 ON t2(t);
+CREATE INDEX t2i4 ON t2(o);

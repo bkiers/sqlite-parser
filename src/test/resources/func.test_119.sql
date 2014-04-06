@@ -1,0 +1,14 @@
+-- func.test
+-- 
+-- execsql {
+--     CREATE TABLE t5(x);
+--     INSERT INTO t5 VALUES(1);
+--     INSERT INTO t5 VALUES(-99);
+--     INSERT INTO t5 VALUES(10000);
+--     SELECT sum(x) FROM t5;
+-- }
+CREATE TABLE t5(x);
+INSERT INTO t5 VALUES(1);
+INSERT INTO t5 VALUES(-99);
+INSERT INTO t5 VALUES(10000);
+SELECT sum(x) FROM t5;

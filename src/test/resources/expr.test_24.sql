@@ -1,0 +1,4 @@
+-- expr.test
+-- 
+-- execsql {SELECT typeof(+0000009223372036854775808)}
+SELECT typeof(+0000009223372036854775808)

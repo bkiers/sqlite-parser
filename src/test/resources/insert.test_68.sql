@@ -1,0 +1,16 @@
+-- insert.test
+-- 
+-- execsql {
+--     CREATE TABLE t6(x INTEGER PRIMARY KEY, y);
+--     INSERT INTO t6 VALUES(1,1);
+--     INSERT INTO t6 VALUES(2,2);
+--     INSERT INTO t6 VALUES(3,3);
+--     INSERT INTO t6 SELECT nullif(y*2+10,14), y+100 FROM t6;
+--     SELECT x, y FROM t6;
+-- }
+CREATE TABLE t6(x INTEGER PRIMARY KEY, y);
+INSERT INTO t6 VALUES(1,1);
+INSERT INTO t6 VALUES(2,2);
+INSERT INTO t6 VALUES(3,3);
+INSERT INTO t6 SELECT nullif(y*2+10,14), y+100 FROM t6;
+SELECT x, y FROM t6;

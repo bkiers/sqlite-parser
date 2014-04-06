@@ -1,0 +1,10 @@
+-- enc3.test
+-- 
+-- execsql {
+--       DELETE FROM t1;
+--       INSERT INTO t1 VALUES(x'616263646566',NULL);
+--       SELECT * FROM t1
+-- }
+DELETE FROM t1;
+INSERT INTO t1 VALUES(x'616263646566',NULL);
+SELECT * FROM t1

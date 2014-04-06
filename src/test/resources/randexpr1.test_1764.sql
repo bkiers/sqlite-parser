@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT +t1.d | (d)*t1.e | (select case abs((max(t1.e)-abs(+case min(a) | (~(min(~t1.c)))*(abs(abs(count(*))+count(distinct b)*count(distinct 17)))*max(c) when max(t1.c) then max(t1.d) else cast(avg(d) AS integer) end | max(t1.a))))*cast(avg(11) AS integer) when (cast(avg( -a) AS integer)) then min(19) else  -count(distinct 13) end from t1)+t1.b FROM t1 WHERE NOT (not exists(select 1 from t1 where e<t1.a))}
+SELECT +t1.d | (d)*t1.e | (select case abs((max(t1.e)-abs(+case min(a) | (~(min(~t1.c)))*(abs(abs(count(*))+count(distinct b)*count(distinct 17)))*max(c) when max(t1.c) then max(t1.d) else cast(avg(d) AS integer) end | max(t1.a))))*cast(avg(11) AS integer) when (cast(avg( -a) AS integer)) then min(19) else  -count(distinct 13) end from t1)+t1.b FROM t1 WHERE NOT (not exists(select 1 from t1 where e<t1.a))

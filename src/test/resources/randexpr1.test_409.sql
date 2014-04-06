@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT coalesce((select t1.f*13 from t1 where exists(select 1 from t1 where 13<=t1.e)),(abs(+ -17)/abs(c))) FROM t1 WHERE NOT (coalesce((select 17 from t1 where 11>++a-~t1.a+d | (19)),(abs(t1.c)/abs(case when case t1.c*17-case when b not between t1.b and f then t1.a when f>=a then 19 else 13 end when 19 then 13 else t1.f end not between c and a then c else 13 end)))> -e or 13 between f and c and t1.e>=b)}
+SELECT coalesce((select t1.f*13 from t1 where exists(select 1 from t1 where 13<=t1.e)),(abs(+ -17)/abs(c))) FROM t1 WHERE NOT (coalesce((select 17 from t1 where 11>++a-~t1.a+d | (19)),(abs(t1.c)/abs(case when case t1.c*17-case when b not between t1.b and f then t1.a when f>=a then 19 else 13 end when 19 then 13 else t1.f end not between c and a then c else 13 end)))> -e or 13 between f and c and t1.e>=b)

@@ -1,0 +1,20 @@
+-- e_fkey.test
+-- 
+-- execsql {
+--     CREATE TABLE p(a UNIQUE);
+--     CREATE TABLE c(b REFERENCES p(a) ON DELETE SET NULL);
+--     INSERT INTO p VALUES('x');
+--     INSERT INTO c VALUES('x');
+--     BEGIN;
+--       DROP TABLE p;
+--       SELECT * FROM c;
+--     ROLLBACK;
+-- }
+CREATE TABLE p(a UNIQUE);
+CREATE TABLE c(b REFERENCES p(a) ON DELETE SET NULL);
+INSERT INTO p VALUES('x');
+INSERT INTO c VALUES('x');
+BEGIN;
+DROP TABLE p;
+SELECT * FROM c;
+ROLLBACK;

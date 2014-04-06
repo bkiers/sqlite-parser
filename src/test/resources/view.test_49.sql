@@ -1,0 +1,28 @@
+-- view.test
+-- 
+-- execsql {
+--     DROP VIEW t1;
+--     DROP TABLE t1;
+--     CREATE TABLE t1(a, b, c);
+--     INSERT INTO t1 VALUES(1, 2, 3);
+--     INSERT INTO t1 VALUES(4, 5, 6);
+-- 
+--     CREATE VIEW vv1 AS SELECT * FROM t1;
+--     CREATE VIEW vv2 AS SELECT * FROM vv1;
+--     CREATE VIEW vv3 AS SELECT * FROM vv2;
+--     CREATE VIEW vv4 AS SELECT * FROM vv3;
+--     CREATE VIEW vv5 AS SELECT * FROM vv4;
+-- 
+--     SELECT * FROM vv5;
+-- }
+DROP VIEW t1;
+DROP TABLE t1;
+CREATE TABLE t1(a, b, c);
+INSERT INTO t1 VALUES(1, 2, 3);
+INSERT INTO t1 VALUES(4, 5, 6);
+CREATE VIEW vv1 AS SELECT * FROM t1;
+CREATE VIEW vv2 AS SELECT * FROM vv1;
+CREATE VIEW vv3 AS SELECT * FROM vv2;
+CREATE VIEW vv4 AS SELECT * FROM vv3;
+CREATE VIEW vv5 AS SELECT * FROM vv4;
+SELECT * FROM vv5;

@@ -1,0 +1,8 @@
+-- fuzz.test
+-- 
+-- execsql {
+--     SELECT 1 FROM abc
+--     GROUP BY c HAVING EXISTS (SELECT a UNION SELECT 123);
+-- }
+SELECT 1 FROM abc
+GROUP BY c HAVING EXISTS (SELECT a UNION SELECT 123);

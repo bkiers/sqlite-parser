@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT coalesce((select max( -(select count(*)-case min(19)-abs(count(*))+(max( -b)-+count(distinct (t1.e))) when max(a) then (count(distinct 19)) else count(*) end from t1)) from t1 where exists(select 1 from t1 where a<(abs(case when a-t1.c+ -19+t1.d between 11 and f then t1.f else d end+t1.a+d)/abs(c))) or t1.c>t1.c),17)*f FROM t1 WHERE not f<>t1.b}
+SELECT coalesce((select max( -(select count(*)-case min(19)-abs(count(*))+(max( -b)-+count(distinct (t1.e))) when max(a) then (count(distinct 19)) else count(*) end from t1)) from t1 where exists(select 1 from t1 where a<(abs(case when a-t1.c+ -19+t1.d between 11 and f then t1.f else d end+t1.a+d)/abs(c))) or t1.c>t1.c),17)*f FROM t1 WHERE not f<>t1.b

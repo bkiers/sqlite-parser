@@ -1,0 +1,14 @@
+-- speed4p.test
+-- 
+-- execsql {
+--   DROP TABLE t4;
+--   DROP TABLE log;
+--   VACUUM;
+--   CREATE TABLE t4(rowid INTEGER PRIMARY KEY, i INTEGER, t TEXT);
+--   BEGIN;
+-- }
+DROP TABLE t4;
+DROP TABLE log;
+VACUUM;
+CREATE TABLE t4(rowid INTEGER PRIMARY KEY, i INTEGER, t TEXT);
+BEGIN;

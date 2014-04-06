@@ -1,0 +1,4 @@
+-- wherelimit.test
+-- 
+-- execsql {UPDATE t1 SET y=1 WHERE x=3 ORDER BY x LIMIT 50 OFFSET 50}
+UPDATE t1 SET y=1 WHERE x=3 ORDER BY x LIMIT 50 OFFSET 50

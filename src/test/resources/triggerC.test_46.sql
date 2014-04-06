@@ -1,0 +1,20 @@
+-- triggerC.test
+-- 
+-- execsql {
+--     CREATE TABLE t9(a,b);
+--     CREATE INDEX t9b ON t9(b);
+--     INSERT INTO t9 VALUES(1,0);
+--     INSERT INTO t9 VALUES(2,1);
+--     INSERT INTO t9 VALUES(3,2);
+--     INSERT INTO t9 SELECT a+3, a+2 FROM t9;
+--     INSERT INTO t9 SELECT a+6, a+5 FROM t9;
+--     SELECT a FROM t9 ORDER BY a;
+-- }
+CREATE TABLE t9(a,b);
+CREATE INDEX t9b ON t9(b);
+INSERT INTO t9 VALUES(1,0);
+INSERT INTO t9 VALUES(2,1);
+INSERT INTO t9 VALUES(3,2);
+INSERT INTO t9 SELECT a+3, a+2 FROM t9;
+INSERT INTO t9 SELECT a+6, a+5 FROM t9;
+SELECT a FROM t9 ORDER BY a;

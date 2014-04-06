@@ -1,0 +1,16 @@
+-- vacuum.test
+-- 
+-- execsql {
+--     BEGIN;
+--     CREATE TABLE t4 AS SELECT * FROM t1;
+--     CREATE TABLE t5 AS SELECT * FROM t1;
+--     COMMIT;
+--     DROP TABLE t4;
+--     DROP TABLE t5;
+-- }
+BEGIN;
+CREATE TABLE t4 AS SELECT * FROM t1;
+CREATE TABLE t5 AS SELECT * FROM t1;
+COMMIT;
+DROP TABLE t4;
+DROP TABLE t5;

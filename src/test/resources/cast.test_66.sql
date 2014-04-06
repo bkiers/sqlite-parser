@@ -1,0 +1,4 @@
+-- cast.test
+-- 
+-- execsql {SELECT CAST(9223372036854774800 AS numeric)}
+SELECT CAST(9223372036854774800 AS numeric)

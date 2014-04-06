@@ -1,0 +1,18 @@
+-- tkt1537.test
+-- 
+-- execsql {
+--     CREATE TABLE t1(id, a1, a2);
+--     INSERT INTO t1 VALUES(1, NULL, NULL);
+--     INSERT INTO t1 VALUES(2, 1, 3);
+--     CREATE TABLE t2(id, b);
+--     INSERT INTO t2 VALUES(3, 1);
+--     INSERT INTO t2 VALUES(4, NULL);
+--     SELECT * FROM t1 LEFT JOIN t2 ON a1=b OR a2=+b;
+-- }
+CREATE TABLE t1(id, a1, a2);
+INSERT INTO t1 VALUES(1, NULL, NULL);
+INSERT INTO t1 VALUES(2, 1, 3);
+CREATE TABLE t2(id, b);
+INSERT INTO t2 VALUES(3, 1);
+INSERT INTO t2 VALUES(4, NULL);
+SELECT * FROM t1 LEFT JOIN t2 ON a1=b OR a2=+b;

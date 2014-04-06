@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT t1.b*case when (abs(t1.c+case when d not in (a,case when b=(t1.a) then (e) when b not between f and t1.c then t1.b else t1.e end, -11) then t1.d when not exists(select 1 from t1 where 19 not between (a) and a or t1.c>d) then d else b end+t1.a+13-19+d)/abs(t1.d))> -t1.f then t1.a when t1.d in (select d from t1 union select c from t1) or 13 not between d and t1.f then t1.b else e end+ - -a FROM t1 WHERE NOT (t1.f<=11)}
+SELECT t1.b*case when (abs(t1.c+case when d not in (a,case when b=(t1.a) then (e) when b not between f and t1.c then t1.b else t1.e end, -11) then t1.d when not exists(select 1 from t1 where 19 not between (a) and a or t1.c>d) then d else b end+t1.a+13-19+d)/abs(t1.d))> -t1.f then t1.a when t1.d in (select d from t1 union select c from t1) or 13 not between d and t1.f then t1.b else e end+ - -a FROM t1 WHERE NOT (t1.f<=11)

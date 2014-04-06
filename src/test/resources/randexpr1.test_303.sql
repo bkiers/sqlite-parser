@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT +coalesce((select t1.d from t1 where coalesce((select t1.c+t1.b-case (19) when t1.c then 13+13+17 else t1.e end from t1 where (not exists(select 1 from t1 where t1.f<13)) and d not in (t1.e,11,19) and not 19>=t1.f or e in (select min(t1.c) from t1 union select cast(avg(t1.c) AS integer) from t1)), -a)-b*(13)<t1.b),(t1.c)) | t1.e FROM t1 WHERE NOT (not (11>(+b)))}
+SELECT +coalesce((select t1.d from t1 where coalesce((select t1.c+t1.b-case (19) when t1.c then 13+13+17 else t1.e end from t1 where (not exists(select 1 from t1 where t1.f<13)) and d not in (t1.e,11,19) and not 19>=t1.f or e in (select min(t1.c) from t1 union select cast(avg(t1.c) AS integer) from t1)), -a)-b*(13)<t1.b),(t1.c)) | t1.e FROM t1 WHERE NOT (not (11>(+b)))

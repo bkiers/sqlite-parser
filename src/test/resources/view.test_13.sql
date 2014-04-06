@@ -1,0 +1,16 @@
+-- view.test
+-- 
+-- execsql {
+--     CREATE TABLE t2(y,a);
+--     INSERT INTO t2 VALUES(22,2);
+--     INSERT INTO t2 VALUES(33,3);
+--     INSERT INTO t2 VALUES(44,4);
+--     INSERT INTO t2 VALUES(55,5);
+--     SELECT * FROM t2;
+-- }
+CREATE TABLE t2(y,a);
+INSERT INTO t2 VALUES(22,2);
+INSERT INTO t2 VALUES(33,3);
+INSERT INTO t2 VALUES(44,4);
+INSERT INTO t2 VALUES(55,5);
+SELECT * FROM t2;

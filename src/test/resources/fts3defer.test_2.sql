@@ -1,0 +1,4 @@
+-- fts3defer.test
+-- 
+-- execsql { CREATE VIRTUAL TABLE t1 USING FTS3 }
+CREATE VIRTUAL TABLE t1 USING FTS3

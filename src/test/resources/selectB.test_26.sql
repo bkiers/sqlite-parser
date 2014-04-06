@@ -1,0 +1,6 @@
+-- selectB.test
+-- 
+-- execsql {
+--       SELECT * FROM (SELECT 345 UNION ALL SELECT d FROM t2) ORDER BY 1;
+-- }
+SELECT * FROM (SELECT 345 UNION ALL SELECT d FROM t2) ORDER BY 1;

@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT coalesce((select c-t1.a | 17 | b-~t1.e-11 from t1 where not exists(select 1 from t1 where t1.c<=t1.b)),17) FROM t1 WHERE NOT ((((coalesce((select max((abs(b-t1.d-19*t1.a*e+~case when t1.e=t1.f-e then (select abs(abs(cast(avg((f)) AS integer))) from t1) else ((abs(t1.b)/abs(t1.a))) end-t1.b-t1.c)/abs(t1.b))) from t1 where not t1.c in (select count(distinct c) from t1 union select count(*) from t1) and 17< -t1.e),(c)) |  -(c))<>e)))}
+SELECT coalesce((select c-t1.a | 17 | b-~t1.e-11 from t1 where not exists(select 1 from t1 where t1.c<=t1.b)),17) FROM t1 WHERE NOT ((((coalesce((select max((abs(b-t1.d-19*t1.a*e+~case when t1.e=t1.f-e then (select abs(abs(cast(avg((f)) AS integer))) from t1) else ((abs(t1.b)/abs(t1.a))) end-t1.b-t1.c)/abs(t1.b))) from t1 where not t1.c in (select count(distinct c) from t1 union select count(*) from t1) and 17< -t1.e),(c)) |  -(c))<>e)))

@@ -1,0 +1,4 @@
+-- e_fkey.test
+-- 
+-- execsql { ALTER TABLE t1 ADD COLUMN c DEFAULT 'xxx' REFERENCES t2 }
+ALTER TABLE t1 ADD COLUMN c DEFAULT 'xxx' REFERENCES t2

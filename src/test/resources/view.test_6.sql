@@ -1,0 +1,14 @@
+-- view.test
+-- 
+-- execsql {
+--     CREATE TABLE t1(x,a,b,c);
+--     INSERT INTO t1 VALUES(1,2,3,4);
+--     INSERT INTO t1 VALUES(4,5,6,7);
+--     INSERT INTO t1 VALUES(7,8,9,10);
+--     SELECT * FROM v1 ORDER BY a;
+-- }
+CREATE TABLE t1(x,a,b,c);
+INSERT INTO t1 VALUES(1,2,3,4);
+INSERT INTO t1 VALUES(4,5,6,7);
+INSERT INTO t1 VALUES(7,8,9,10);
+SELECT * FROM v1 ORDER BY a;

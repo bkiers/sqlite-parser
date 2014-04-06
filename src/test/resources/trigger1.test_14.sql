@@ -1,0 +1,14 @@
+-- trigger1.test
+-- 
+-- execsql {
+--       CREATE TEMP TRIGGER r1 BEFORE INSERT ON t1 BEGIN
+--         INSERT INTO t2 VALUES(NEW.a,NEW.b);
+--       END;
+--       INSERT INTO t1 VALUES(7,8);
+--       SELECT * FROM t2;
+-- }
+CREATE TEMP TRIGGER r1 BEFORE INSERT ON t1 BEGIN
+INSERT INTO t2 VALUES(NEW.a,NEW.b);
+END;
+INSERT INTO t1 VALUES(7,8);
+SELECT * FROM t2;

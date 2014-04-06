@@ -1,0 +1,22 @@
+-- tkt-31338dca7e.test
+-- 
+-- db eval {
+--     CREATE TABLE t1(x);
+--     CREATE TABLE t2(y);
+--     INSERT INTO t1 VALUES(111);
+--     INSERT INTO t1 VALUES(222);
+--     INSERT INTO t2 VALUES(333);
+--     INSERT INTO t2 VALUES(444);
+--     SELECT * FROM t1, t2
+--      WHERE (x=111 AND y!=444) OR x=222
+--      ORDER BY x, y;
+-- }
+CREATE TABLE t1(x);
+CREATE TABLE t2(y);
+INSERT INTO t1 VALUES(111);
+INSERT INTO t1 VALUES(222);
+INSERT INTO t2 VALUES(333);
+INSERT INTO t2 VALUES(444);
+SELECT * FROM t1, t2
+WHERE (x=111 AND y!=444) OR x=222
+ORDER BY x, y;

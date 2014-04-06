@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT  -case when (not exists(select 1 from t1 where e*d*case 17 when case t1.c-t1.f when t1.a then t1.a else 11 end then t1.c else t1.b end-e+(t1.a)-e not in (e,e,t1.a) and (t1.f not between 19 and t1.e))) and t1.b<t1.a then f-d-c+b when 17=17 then 19 else d end FROM t1 WHERE NOT (f*t1.a not between coalesce((select t1.b from t1 where 17=13),17*e) and e)}
+SELECT  -case when (not exists(select 1 from t1 where e*d*case 17 when case t1.c-t1.f when t1.a then t1.a else 11 end then t1.c else t1.b end-e+(t1.a)-e not in (e,e,t1.a) and (t1.f not between 19 and t1.e))) and t1.b<t1.a then f-d-c+b when 17=17 then 19 else d end FROM t1 WHERE NOT (f*t1.a not between coalesce((select t1.b from t1 where 17=13),17*e) and e)

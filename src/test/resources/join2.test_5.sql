@@ -1,0 +1,8 @@
+-- join2.test
+-- 
+-- execsql {
+--     SELECT * FROM
+--       t1 NATURAL JOIN t2 NATURAL LEFT OUTER JOIN t3
+-- }
+SELECT * FROM
+t1 NATURAL JOIN t2 NATURAL LEFT OUTER JOIN t3

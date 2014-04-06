@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT (abs(coalesce((select ((t1.c)) from t1 where not exists(select 1 from t1 where t1.e*17<13*coalesce((select max(a) from t1 where 19 in (select max(e*11) from t1 union select cast(avg(t1.b) AS integer) from t1)),a | a))),case when f-13<d+17 and not exists(select 1 from t1 where e<= -13) or a between e and d then case t1.a when t1.b then f else t1.f end when  - -t1.f<>t1.e then t1.b else f end))/abs(17)) FROM t1 WHERE ((d not between  -a and b))}
+SELECT (abs(coalesce((select ((t1.c)) from t1 where not exists(select 1 from t1 where t1.e*17<13*coalesce((select max(a) from t1 where 19 in (select max(e*11) from t1 union select cast(avg(t1.b) AS integer) from t1)),a | a))),case when f-13<d+17 and not exists(select 1 from t1 where e<= -13) or a between e and d then case t1.a when t1.b then f else t1.f end when  - -t1.f<>t1.e then t1.b else f end))/abs(17)) FROM t1 WHERE ((d not between  -a and b))

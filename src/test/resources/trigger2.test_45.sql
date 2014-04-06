@@ -1,0 +1,16 @@
+-- trigger2.test
+-- 
+-- execsql {
+--     CREATE TABLE v1log(a,b,c,d,e,f);
+--     CREATE TRIGGER r1 INSTEAD OF DELETE ON v1 BEGIN
+--       INSERT INTO v1log VALUES(OLD.x,NULL,OLD.y,NULL,OLD.z,NULL);
+--     END;
+--     DELETE FROM v1 WHERE x=1;
+--     SELECT * FROM v1log;
+-- }
+CREATE TABLE v1log(a,b,c,d,e,f);
+CREATE TRIGGER r1 INSTEAD OF DELETE ON v1 BEGIN
+INSERT INTO v1log VALUES(OLD.x,NULL,OLD.y,NULL,OLD.z,NULL);
+END;
+DELETE FROM v1 WHERE x=1;
+SELECT * FROM v1log;

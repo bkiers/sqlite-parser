@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT case when not (select  - -count(distinct t1.f)-(max(case when e not between f and t1.b+(13)+ -d-t1.a then t1.d else 11 end))+ -max(t1.b)*cast(avg(13) AS integer)-count(*) | (max(t1.e)) from t1)<>~t1.d then b when  -coalesce((select (abs(t1.e)/abs(t1.b)) from t1 where a<>b), - -17)<=t1.a then  -f else 11 end FROM t1 WHERE NOT (t1.a<>(select max(19) from t1))}
+SELECT case when not (select  - -count(distinct t1.f)-(max(case when e not between f and t1.b+(13)+ -d-t1.a then t1.d else 11 end))+ -max(t1.b)*cast(avg(13) AS integer)-count(*) | (max(t1.e)) from t1)<>~t1.d then b when  -coalesce((select (abs(t1.e)/abs(t1.b)) from t1 where a<>b), - -17)<=t1.a then  -f else 11 end FROM t1 WHERE NOT (t1.a<>(select max(19) from t1))

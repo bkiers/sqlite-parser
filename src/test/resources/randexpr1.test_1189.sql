@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT case when (abs((abs(d)/abs(t1.f-c)))/abs( -t1.f))*case when (t1.c not in (case when t1.b>case t1.d when t1.b then e else 11 end then t1.a when ( -t1.d in (select  -count(*)-cast(avg(f) AS integer) from t1 union select count(*) from t1)) or 11 in (e,t1.e,c) then a else b end,t1.a,11) or t1.a in (17,t1.a,t1.d) and b>(t1.a)) then 11 when c<b then t1.f+t1.e else b end+t1.a>t1.b then t1.c else 17 end FROM t1 WHERE NOT (t1.b>f)}
+SELECT case when (abs((abs(d)/abs(t1.f-c)))/abs( -t1.f))*case when (t1.c not in (case when t1.b>case t1.d when t1.b then e else 11 end then t1.a when ( -t1.d in (select  -count(*)-cast(avg(f) AS integer) from t1 union select count(*) from t1)) or 11 in (e,t1.e,c) then a else b end,t1.a,11) or t1.a in (17,t1.a,t1.d) and b>(t1.a)) then 11 when c<b then t1.f+t1.e else b end+t1.a>t1.b then t1.c else 17 end FROM t1 WHERE NOT (t1.b>f)

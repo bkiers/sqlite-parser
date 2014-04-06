@@ -1,0 +1,6 @@
+-- limit.test
+-- 
+-- execsql {
+--     SELECT a+9 FROM t6 EXCEPT SELECT y FROM t2 ORDER BY 1 DESC LIMIT 2;
+-- }
+SELECT a+9 FROM t6 EXCEPT SELECT y FROM t2 ORDER BY 1 DESC LIMIT 2;

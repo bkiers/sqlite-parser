@@ -1,0 +1,14 @@
+-- join2.test
+-- 
+-- execsql {
+--     CREATE TABLE t1(a,b);
+--     INSERT INTO t1 VALUES(1,11);
+--     INSERT INTO t1 VALUES(2,22);
+--     INSERT INTO t1 VALUES(3,33);
+--     SELECT * FROM t1;
+-- }
+CREATE TABLE t1(a,b);
+INSERT INTO t1 VALUES(1,11);
+INSERT INTO t1 VALUES(2,22);
+INSERT INTO t1 VALUES(3,33);
+SELECT * FROM t1;

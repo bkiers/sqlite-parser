@@ -1,0 +1,13 @@
+-- subquery.test
+-- 
+-- execsql {
+--     CREATE TABLE t3(a INTEGER);
+--     INSERT INTO t3 VALUES(10);
+-- 
+--     CREATE TABLE t4(x TEXT);
+--     INSERT INTO t4 VALUES('10.0');
+-- }
+CREATE TABLE t3(a INTEGER);
+INSERT INTO t3 VALUES(10);
+CREATE TABLE t4(x TEXT);
+INSERT INTO t4 VALUES('10.0');

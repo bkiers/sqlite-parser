@@ -1,0 +1,18 @@
+-- insert3.test
+-- 
+-- execsql {
+--     CREATE TABLE log2(x PRIMARY KEY,y);
+--     CREATE TRIGGER r2 BEFORE INSERT ON t1 BEGIN
+--       UPDATE log2 SET y=y+1 WHERE x=new.b;
+--       INSERT OR IGNORE INTO log2 VALUES(new.b,1);
+--     END;
+--     INSERT INTO t1 VALUES(453,'hi');
+--     SELECT * FROM log ORDER BY x;
+-- }
+CREATE TABLE log2(x PRIMARY KEY,y);
+CREATE TRIGGER r2 BEFORE INSERT ON t1 BEGIN
+UPDATE log2 SET y=y+1 WHERE x=new.b;
+INSERT OR IGNORE INTO log2 VALUES(new.b,1);
+END;
+INSERT INTO t1 VALUES(453,'hi');
+SELECT * FROM log ORDER BY x;

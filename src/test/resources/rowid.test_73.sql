@@ -1,0 +1,16 @@
+-- rowid.test
+-- 
+-- execsql {
+--     CREATE TABLE t5(a);
+--     INSERT INTO t5 VALUES(1);
+--     INSERT INTO t5 VALUES(2);
+--     INSERT INTO t5 SELECT a+2 FROM t5;
+--     INSERT INTO t5 SELECT a+4 FROM t5;
+--     SELECT rowid, * FROM t5;
+-- }
+CREATE TABLE t5(a);
+INSERT INTO t5 VALUES(1);
+INSERT INTO t5 VALUES(2);
+INSERT INTO t5 SELECT a+2 FROM t5;
+INSERT INTO t5 SELECT a+4 FROM t5;
+SELECT rowid, * FROM t5;

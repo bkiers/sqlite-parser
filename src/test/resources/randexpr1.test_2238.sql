@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT 19+case when d between t1.b and 19+t1.d*(select ~min(t1.e | a) from t1)-case when exists(select 1 from t1 where 19<>t1.a and 19 between case +19 when 19 then t1.e else e end and t1.a) then a when t1.a between 13 and f or (t1.f<19) and d>=t1.c and f not between a and t1.b then a else t1.d end then b else t1.a end+ -d FROM t1 WHERE f>=t1.d+(t1.a)}
+SELECT 19+case when d between t1.b and 19+t1.d*(select ~min(t1.e | a) from t1)-case when exists(select 1 from t1 where 19<>t1.a and 19 between case +19 when 19 then t1.e else e end and t1.a) then a when t1.a between 13 and f or (t1.f<19) and d>=t1.c and f not between a and t1.b then a else t1.d end then b else t1.a end+ -d FROM t1 WHERE f>=t1.d+(t1.a)

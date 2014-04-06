@@ -1,0 +1,10 @@
+-- fuzz.test
+-- 
+-- execsql {
+--     SELECT (SELECT (
+--         SELECT (SELECT -2147483648) FROM (SELECT 1) ORDER BY 1
+--     ))
+-- }
+SELECT (SELECT (
+SELECT (SELECT -2147483648) FROM (SELECT 1) ORDER BY 1
+))

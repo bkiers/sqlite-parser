@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT (abs(e-((coalesce((select max(t1.c) from t1 where t1.f-a-case coalesce((select max(d) from t1 where (13<>~19)),f) when a- -t1.a | t1.f then t1.a*11-t1.e else coalesce((select max(t1.b) from t1 where not exists(select 1 from t1 where 17=t1.a or b>=f)),c) | t1.b end>19),t1.a))+c)-t1.c*e)/abs(t1.d)) FROM t1 WHERE NOT (a-t1.b not in (a,a-19-c | t1.d-d | e*t1.c*b,t1.e+t1.a))}
+SELECT (abs(e-((coalesce((select max(t1.c) from t1 where t1.f-a-case coalesce((select max(d) from t1 where (13<>~19)),f) when a- -t1.a | t1.f then t1.a*11-t1.e else coalesce((select max(t1.b) from t1 where not exists(select 1 from t1 where 17=t1.a or b>=f)),c) | t1.b end>19),t1.a))+c)-t1.c*e)/abs(t1.d)) FROM t1 WHERE NOT (a-t1.b not in (a,a-19-c | t1.d-d | e*t1.c*b,t1.e+t1.a))

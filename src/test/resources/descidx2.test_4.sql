@@ -1,0 +1,14 @@
+-- descidx2.test
+-- 
+-- execsql {
+--     INSERT INTO t1 VALUES(1,1);
+--     INSERT INTO t1 VALUES(2,2);
+--     INSERT INTO t1 SELECT a+2, a+2 FROM t1;
+--     INSERT INTO t1 SELECT a+4, a+4 FROM t1;
+--     SELECT b FROM t1 WHERE a>3 AND a<7;
+-- }
+INSERT INTO t1 VALUES(1,1);
+INSERT INTO t1 VALUES(2,2);
+INSERT INTO t1 SELECT a+2, a+2 FROM t1;
+INSERT INTO t1 SELECT a+4, a+4 FROM t1;
+SELECT b FROM t1 WHERE a>3 AND a<7;

@@ -1,0 +1,8 @@
+-- corrupt.test
+-- 
+-- execsql { 
+--       UPDATE t1 SET x = X'870400020003000400050006000700080009000A' 
+--       WHERE rowid = 10;
+-- }
+UPDATE t1 SET x = X'870400020003000400050006000700080009000A' 
+WHERE rowid = 10;

@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT f*coalesce((select max((select count(*) from t1)) from t1 where ~case when t1.e<=case when 17>=+case when c*a in (c,t1.b,13) then t1.e when a>t1.b and a<=19 then c else t1.e end then t1.c else 17 end-f*17 or a between b and 19 then t1.c when  -f<=11 then c else  -11 end*t1.c+d>=e),17) FROM t1 WHERE (19 not between t1.b and ~e)}
+SELECT f*coalesce((select max((select count(*) from t1)) from t1 where ~case when t1.e<=case when 17>=+case when c*a in (c,t1.b,13) then t1.e when a>t1.b and a<=19 then c else t1.e end then t1.c else 17 end-f*17 or a between b and 19 then t1.c when  -f<=11 then c else  -11 end*t1.c+d>=e),17) FROM t1 WHERE (19 not between t1.b and ~e)

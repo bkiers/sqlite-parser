@@ -1,0 +1,12 @@
+-- insert4.test
+-- 
+-- execsql {
+--       INSERT INTO t4 VALUES(NULL,0);
+--       INSERT INTO t4 VALUES(NULL,1);
+--       INSERT INTO t4 VALUES(NULL,1);
+--       VACUUM;   
+-- }
+INSERT INTO t4 VALUES(NULL,0);
+INSERT INTO t4 VALUES(NULL,1);
+INSERT INTO t4 VALUES(NULL,1);
+VACUUM;

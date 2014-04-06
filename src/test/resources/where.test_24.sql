@@ -1,0 +1,10 @@
+-- where.test
+-- 
+-- execsql {
+--     CREATE TABLE t8(a INTEGER PRIMARY KEY, b TEXT UNIQUE);
+--     INSERT INTO t8 VALUES(1,'one');
+--     INSERT INTO t8 VALUES(4,'four');
+-- }
+CREATE TABLE t8(a INTEGER PRIMARY KEY, b TEXT UNIQUE);
+INSERT INTO t8 VALUES(1,'one');
+INSERT INTO t8 VALUES(4,'four');

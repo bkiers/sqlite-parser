@@ -1,0 +1,12 @@
+-- null.test
+-- 
+-- execsql {
+--     CREATE TABLE t4(x,y);
+--     INSERT INTO t4 VALUES(1,11);
+--     INSERT INTO t4 VALUES(2,NULL);
+--     SELECT x FROM t4 WHERE y=NULL;
+-- }
+CREATE TABLE t4(x,y);
+INSERT INTO t4 VALUES(1,11);
+INSERT INTO t4 VALUES(2,NULL);
+SELECT x FROM t4 WHERE y=NULL;

@@ -1,0 +1,12 @@
+-- intpkey.test
+-- 
+-- execsql {
+--     CREATE TABLE t3(a INTEGER PRIMARY KEY, b INTEGER, c TEXT);
+--     INSERT INTO t3 VALUES(1, 1, 'one');
+--     INSERT INTO t3 VALUES(2, 2, '2');
+--     INSERT INTO t3 VALUES(3, 3, 3);
+-- }
+CREATE TABLE t3(a INTEGER PRIMARY KEY, b INTEGER, c TEXT);
+INSERT INTO t3 VALUES(1, 1, 'one');
+INSERT INTO t3 VALUES(2, 2, '2');
+INSERT INTO t3 VALUES(3, 3, 3);

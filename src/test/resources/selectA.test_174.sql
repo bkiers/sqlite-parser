@@ -1,0 +1,26 @@
+-- selectA.test
+-- 
+-- execsql {
+--     SELECT a,b,c FROM t1 WHERE b<'d'
+--     INTERSECT SELECT a,b,c FROM t1
+--     INTERSECT SELECT a,b,c FROM t3
+--     EXCEPT SELECT b,c,a FROM t3
+--     INTERSECT SELECT a,b,c FROM t1
+--     EXCEPT SELECT x,y,z FROM t2
+--     INTERSECT SELECT a,b,c FROM t3
+--     EXCEPT SELECT y,x,z FROM t2
+--     INTERSECT SELECT a,b,c FROM t1
+--     EXCEPT SELECT c,b,a FROM t3
+--     ORDER BY c
+-- }
+SELECT a,b,c FROM t1 WHERE b<'d'
+INTERSECT SELECT a,b,c FROM t1
+INTERSECT SELECT a,b,c FROM t3
+EXCEPT SELECT b,c,a FROM t3
+INTERSECT SELECT a,b,c FROM t1
+EXCEPT SELECT x,y,z FROM t2
+INTERSECT SELECT a,b,c FROM t3
+EXCEPT SELECT y,x,z FROM t2
+INTERSECT SELECT a,b,c FROM t1
+EXCEPT SELECT c,b,a FROM t3
+ORDER BY c

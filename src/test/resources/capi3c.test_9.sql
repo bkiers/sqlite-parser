@@ -1,0 +1,14 @@
+-- capi3c.test
+-- 
+-- execsql {
+--     CREATE TABLE t2(a);
+--     INSERT INTO t2 VALUES(1);
+--     INSERT INTO t2 VALUES(2);
+--     BEGIN;
+--     INSERT INTO t2 VALUES(3);
+-- }
+CREATE TABLE t2(a);
+INSERT INTO t2 VALUES(1);
+INSERT INTO t2 VALUES(2);
+BEGIN;
+INSERT INTO t2 VALUES(3);

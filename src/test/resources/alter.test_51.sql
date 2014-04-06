@@ -1,0 +1,4 @@
+-- alter.test
+-- 
+-- execsql {SELECT SQLITE_RENAME_TRIGGER(0,0)}
+SELECT SQLITE_RENAME_TRIGGER(0,0)

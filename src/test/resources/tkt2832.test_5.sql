@@ -1,0 +1,16 @@
+-- tkt2832.test
+-- 
+-- execsql {
+--     CREATE TABLE t3(a, b);
+--     CREATE TRIGGER t3_t AFTER DELETE ON t3 BEGIN
+--       DELETE FROM t3 WHERE a = old.a + 1;
+--     END;
+--     INSERT INTO t3 VALUES(1, 2);
+--     INSERT INTO t3 VALUES(2, 3);
+-- }
+CREATE TABLE t3(a, b);
+CREATE TRIGGER t3_t AFTER DELETE ON t3 BEGIN
+DELETE FROM t3 WHERE a = old.a + 1;
+END;
+INSERT INTO t3 VALUES(1, 2);
+INSERT INTO t3 VALUES(2, 3);

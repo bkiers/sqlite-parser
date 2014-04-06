@@ -1,0 +1,8 @@
+-- types.test
+-- 
+-- execsql {
+--     INSERT INTO t1 VALUES(30000);
+--     INSERT INTO t1 VALUES(-30000);
+-- }
+INSERT INTO t1 VALUES(30000);
+INSERT INTO t1 VALUES(-30000);

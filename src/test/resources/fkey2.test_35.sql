@@ -1,0 +1,22 @@
+-- fkey2.test
+-- 
+-- execsql {
+--     CREATE TABLE pp(a, b, c, PRIMARY KEY(b, c));
+--     CREATE TABLE cc(d DEFAULT 3, e DEFAULT 1, f DEFAULT 2,
+--         FOREIGN KEY(f, d) REFERENCES pp 
+--         ON UPDATE SET DEFAULT 
+--         ON DELETE SET NULL
+--     );
+--     INSERT INTO pp VALUES(1, 2, 3);
+--     INSERT INTO pp VALUES(4, 5, 6);
+--     INSERT INTO pp VALUES(7, 8, 9);
+-- }
+CREATE TABLE pp(a, b, c, PRIMARY KEY(b, c));
+CREATE TABLE cc(d DEFAULT 3, e DEFAULT 1, f DEFAULT 2,
+FOREIGN KEY(f, d) REFERENCES pp 
+ON UPDATE SET DEFAULT 
+ON DELETE SET NULL
+);
+INSERT INTO pp VALUES(1, 2, 3);
+INSERT INTO pp VALUES(4, 5, 6);
+INSERT INTO pp VALUES(7, 8, 9);

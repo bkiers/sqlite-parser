@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT (select ~cast(avg(t1.c) AS integer)*case count(*) | +min(case +case when a<13 or case t1.f when c then 17 else t1.d end in (11,a,(t1.a)) and a<>a then t1.b+f when f not in (d,t1.a,c) then t1.f else t1.e end when t1.f then 17 else f end)+abs(++count(distinct 19))*(count(distinct 13))-count(distinct t1.e)-(count(*))*max(19) when max(11) then cast(avg(a) AS integer) else min(t1.f) end from t1) FROM t1 WHERE t1.a not between 17 and d}
+SELECT (select ~cast(avg(t1.c) AS integer)*case count(*) | +min(case +case when a<13 or case t1.f when c then 17 else t1.d end in (11,a,(t1.a)) and a<>a then t1.b+f when f not in (d,t1.a,c) then t1.f else t1.e end when t1.f then 17 else f end)+abs(++count(distinct 19))*(count(distinct 13))-count(distinct t1.e)-(count(*))*max(19) when max(11) then cast(avg(a) AS integer) else min(t1.f) end from t1) FROM t1 WHERE t1.a not between 17 and d

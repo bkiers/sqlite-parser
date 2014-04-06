@@ -1,0 +1,12 @@
+-- select1.test
+-- 
+-- execsql {
+--     CREATE TABLE t5(a,b);
+--     INSERT INTO t5 VALUES(1,10);
+--     INSERT INTO t5 VALUES(2,9);
+--     SELECT * FROM t5 ORDER BY 1;
+-- }
+CREATE TABLE t5(a,b);
+INSERT INTO t5 VALUES(1,10);
+INSERT INTO t5 VALUES(2,9);
+SELECT * FROM t5 ORDER BY 1;

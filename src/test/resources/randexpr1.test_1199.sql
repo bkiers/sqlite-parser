@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT +(abs(13)/abs(+~~case t1.e | +11-b-coalesce((select max(c) from t1 where 19 in (select cast(avg(coalesce((select max(case when t1.a<t1.d and t1.f<(11) then t1.f else  -a end*t1.c) from t1 where e<=d and c<f),17)) AS integer)- -max(t1.e)-count(distinct a) from t1 union select max(f) from t1)),t1.c) when t1.a then t1.e else t1.c end*17)) FROM t1 WHERE NOT (t1.a between 19 and (t1.b))}
+SELECT +(abs(13)/abs(+~~case t1.e | +11-b-coalesce((select max(c) from t1 where 19 in (select cast(avg(coalesce((select max(case when t1.a<t1.d and t1.f<(11) then t1.f else  -a end*t1.c) from t1 where e<=d and c<f),17)) AS integer)- -max(t1.e)-count(distinct a) from t1 union select max(f) from t1)),t1.c) when t1.a then t1.e else t1.c end*17)) FROM t1 WHERE NOT (t1.a between 19 and (t1.b))

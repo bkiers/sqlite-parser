@@ -1,0 +1,6 @@
+-- tkt1473.test
+-- 
+-- execsql {
+--     SELECT (SELECT 1 FROM t1 WHERE a=1 UNION SELECT 2 FROM t1 WHERE b=0)
+-- }
+SELECT (SELECT 1 FROM t1 WHERE a=1 UNION SELECT 2 FROM t1 WHERE b=0)

@@ -1,0 +1,8 @@
+-- join6.test
+-- 
+-- execsql {
+--     SELECT * FROM t1 NATURAL JOIN t2 NATURAL JOIN
+--        (SELECT 5 AS c, 91 AS x, 93 AS z UNION SELECT 6, 99, 95)
+-- }
+SELECT * FROM t1 NATURAL JOIN t2 NATURAL JOIN
+(SELECT 5 AS c, 91 AS x, 93 AS z UNION SELECT 6, 99, 95)

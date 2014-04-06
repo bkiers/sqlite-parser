@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT case 13 when 13 then case when 11 between case case when not 17 not between f-t1.e and (abs(19)/abs(((t1.b))))*19 then t1.a when exists(select 1 from t1 where t1.e not between d and 13) then t1.c else  -e end when t1.e then t1.c else e end and 17 then 19 when not exists(select 1 from t1 where 11=f) and exists(select 1 from t1 where d<>t1.a) or t1.f>=17 then a else t1.e end else 19 end*11 FROM t1 WHERE NOT (case 17 when t1.f then 11 else c end+d=t1.f)}
+SELECT case 13 when 13 then case when 11 between case case when not 17 not between f-t1.e and (abs(19)/abs(((t1.b))))*19 then t1.a when exists(select 1 from t1 where t1.e not between d and 13) then t1.c else  -e end when t1.e then t1.c else e end and 17 then 19 when not exists(select 1 from t1 where 11=f) and exists(select 1 from t1 where d<>t1.a) or t1.f>=17 then a else t1.e end else 19 end*11 FROM t1 WHERE NOT (case 17 when t1.f then 11 else c end+d=t1.f)

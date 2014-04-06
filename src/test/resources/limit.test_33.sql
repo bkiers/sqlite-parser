@@ -1,0 +1,18 @@
+-- limit.test
+-- 
+-- execsql {
+--     BEGIN;
+--     CREATE TABLE t6(a);
+--     INSERT INTO t6 VALUES(1);
+--     INSERT INTO t6 VALUES(2);
+--     INSERT INTO t6 SELECT a+2 FROM t6;
+--     COMMIT;
+--     SELECT * FROM t6;
+-- }
+BEGIN;
+CREATE TABLE t6(a);
+INSERT INTO t6 VALUES(1);
+INSERT INTO t6 VALUES(2);
+INSERT INTO t6 SELECT a+2 FROM t6;
+COMMIT;
+SELECT * FROM t6;

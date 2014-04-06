@@ -1,0 +1,17 @@
+-- join6.test
+-- 
+-- execsql {
+--     CREATE TABLE t1(a);
+--     CREATE TABLE t2(a);
+--     CREATE TABLE t3(a,b);
+--     INSERT INTO t1 VALUES(1);
+--     INSERT INTO t3 VALUES(1,2);
+-- 
+--     SELECT * FROM t1 LEFT JOIN t2 USING(a) LEFT JOIN t3 USING(a);
+-- }
+CREATE TABLE t1(a);
+CREATE TABLE t2(a);
+CREATE TABLE t3(a,b);
+INSERT INTO t1 VALUES(1);
+INSERT INTO t3 VALUES(1,2);
+SELECT * FROM t1 LEFT JOIN t2 USING(a) LEFT JOIN t3 USING(a);

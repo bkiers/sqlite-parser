@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT f*19+17*(select max(b)+count(*)- -~count(*)-min(case when (e<=b-t1.b) then case when t1.b>t1.a or f not in (c, -c,f) or f in (e,13,13) then t1.b else t1.b end else a end*a) from t1)+t1.f*(abs(case b & t1.c+t1.a when ((f)) then f else c end+b)/abs(17))-(c) FROM t1 WHERE t1.e>11}
+SELECT f*19+17*(select max(b)+count(*)- -~count(*)-min(case when (e<=b-t1.b) then case when t1.b>t1.a or f not in (c, -c,f) or f in (e,13,13) then t1.b else t1.b end else a end*a) from t1)+t1.f*(abs(case b & t1.c+t1.a when ((f)) then f else c end+b)/abs(17))-(c) FROM t1 WHERE t1.e>11

@@ -1,0 +1,10 @@
+-- select7.test
+-- 
+-- execsql {
+--     CREATE TABLE t3(a REAL);
+--     INSERT INTO t3 VALUES(44.0);
+--     INSERT INTO t3 VALUES(56.0);
+-- }
+CREATE TABLE t3(a REAL);
+INSERT INTO t3 VALUES(44.0);
+INSERT INTO t3 VALUES(56.0);

@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT case when not t1.c not in (13,d,~case when coalesce((select max((abs(t1.c)/abs(t1.e))) from t1 where b-t1.d+b+t1.f>a),t1.a) in (select 19 from t1 union select t1.a from t1) then  -b else a end*b | d) and  -(t1.b)>=e and 11<d or ((19))<> -t1.c then t1.f else t1.f end+(t1.b)+a FROM t1 WHERE NOT (e>e)}
+SELECT case when not t1.c not in (13,d,~case when coalesce((select max((abs(t1.c)/abs(t1.e))) from t1 where b-t1.d+b+t1.f>a),t1.a) in (select 19 from t1 union select t1.a from t1) then  -b else a end*b | d) and  -(t1.b)>=e and 11<d or ((19))<> -t1.c then t1.f else t1.f end+(t1.b)+a FROM t1 WHERE NOT (e>e)

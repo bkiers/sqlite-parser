@@ -1,0 +1,8 @@
+-- func.test
+-- 
+-- execsql {
+--       SELECT sum(x)>0 FROM (SELECT '9223372036' || '854775808' AS x
+--                           UNION ALL SELECT -9223372036850000000)
+-- }
+SELECT sum(x)>0 FROM (SELECT '9223372036' || '854775808' AS x
+UNION ALL SELECT -9223372036850000000)

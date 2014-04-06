@@ -1,0 +1,18 @@
+-- index.test
+-- 
+-- execsql {
+--     CREATE TABLE t1(a int, b int);
+--     CREATE INDEX i1 ON t1(a);
+--     INSERT INTO t1 VALUES(1,2);
+--     INSERT INTO t1 VALUES(2,4);
+--     INSERT INTO t1 VALUES(3,8);
+--     INSERT INTO t1 VALUES(1,12);
+--     SELECT b FROM t1 WHERE a=1 ORDER BY b;
+-- }
+CREATE TABLE t1(a int, b int);
+CREATE INDEX i1 ON t1(a);
+INSERT INTO t1 VALUES(1,2);
+INSERT INTO t1 VALUES(2,4);
+INSERT INTO t1 VALUES(3,8);
+INSERT INTO t1 VALUES(1,12);
+SELECT b FROM t1 WHERE a=1 ORDER BY b;

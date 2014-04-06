@@ -1,0 +1,10 @@
+-- rowid.test
+-- 
+-- execsql {
+--     INSERT INTO t2(a,b) VALUES(2147483647,99);
+--     INSERT INTO t2(b) VALUES(11);
+--     SELECT b FROM t2 ORDER BY b;
+-- }
+INSERT INTO t2(a,b) VALUES(2147483647,99);
+INSERT INTO t2(b) VALUES(11);
+SELECT b FROM t2 ORDER BY b;

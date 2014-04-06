@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT (select abs(case max(t1.b)-(min(17))* -count(distinct case when case t1.f when t1.b then case e when c then t1.c else c end else t1.b end>=t1.e then d else e end) & ~+count(distinct t1.c)-(abs( -count(*))- -max(c)) & count(distinct t1.c) when count(distinct ( -t1.c)) then count(*) else max(t1.b) end* -count(*))-cast(avg( -11) AS integer)*min(19)+max(e) from t1) FROM t1 WHERE t1.a+t1.a>13}
+SELECT (select abs(case max(t1.b)-(min(17))* -count(distinct case when case t1.f when t1.b then case e when c then t1.c else c end else t1.b end>=t1.e then d else e end) & ~+count(distinct t1.c)-(abs( -count(*))- -max(c)) & count(distinct t1.c) when count(distinct ( -t1.c)) then count(*) else max(t1.b) end* -count(*))-cast(avg( -11) AS integer)*min(19)+max(e) from t1) FROM t1 WHERE t1.a+t1.a>13

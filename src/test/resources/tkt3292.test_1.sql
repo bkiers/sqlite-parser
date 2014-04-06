@@ -1,0 +1,18 @@
+-- tkt3292.test
+-- 
+-- execsql {
+--     PRAGMA legacy_file_format=OFF;
+--     CREATE TABLE t1(a INTEGER PRIMARY KEY, b INT);
+--     INSERT INTO t1 VALUES(0, 1);
+--     INSERT INTO t1 VALUES(1, 1);
+--     INSERT INTO t1 VALUES(2, 1);
+--     CREATE INDEX i1 ON t1(b);
+--     SELECT * FROM t1 WHERE b>=1;
+-- }
+PRAGMA legacy_file_format=OFF;
+CREATE TABLE t1(a INTEGER PRIMARY KEY, b INT);
+INSERT INTO t1 VALUES(0, 1);
+INSERT INTO t1 VALUES(1, 1);
+INSERT INTO t1 VALUES(2, 1);
+CREATE INDEX i1 ON t1(b);
+SELECT * FROM t1 WHERE b>=1;

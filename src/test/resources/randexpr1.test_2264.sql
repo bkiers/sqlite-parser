@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT (select (count(distinct case t1.d+case when (coalesce((select max((select + -cast(avg(b) AS integer)-min(19) & (cast(avg(19) AS integer)) from t1)) from t1 where ~c+t1.c<t1.d),(c)) in (select t1.c from t1 union select t1.f from t1)) then (select abs( -min(t1.e)) & min(t1.c) from t1) when 11 not between  -d and a or a<>t1.a and f between t1.e and d and f<=19 then t1.f else t1.b end-c*a when t1.f then e else t1.b end)) from t1) FROM t1 WHERE NOT (not b*c+d<>b)}
+SELECT (select (count(distinct case t1.d+case when (coalesce((select max((select + -cast(avg(b) AS integer)-min(19) & (cast(avg(19) AS integer)) from t1)) from t1 where ~c+t1.c<t1.d),(c)) in (select t1.c from t1 union select t1.f from t1)) then (select abs( -min(t1.e)) & min(t1.c) from t1) when 11 not between  -d and a or a<>t1.a and f between t1.e and d and f<=19 then t1.f else t1.b end-c*a when t1.f then e else t1.b end)) from t1) FROM t1 WHERE NOT (not b*c+d<>b)

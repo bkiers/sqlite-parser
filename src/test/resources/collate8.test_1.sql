@@ -1,0 +1,16 @@
+-- collate8.test
+-- 
+-- execsql {
+--     CREATE TABLE t1(a TEXT COLLATE nocase);
+--     INSERT INTO t1 VALUES('aaa');
+--     INSERT INTO t1 VALUES('BBB');
+--     INSERT INTO t1 VALUES('ccc');
+--     INSERT INTO t1 VALUES('DDD');
+--     SELECT a FROM t1 ORDER BY a;
+-- }
+CREATE TABLE t1(a TEXT COLLATE nocase);
+INSERT INTO t1 VALUES('aaa');
+INSERT INTO t1 VALUES('BBB');
+INSERT INTO t1 VALUES('ccc');
+INSERT INTO t1 VALUES('DDD');
+SELECT a FROM t1 ORDER BY a;

@@ -1,0 +1,35 @@
+-- join6.test
+-- 
+-- execsql {
+--     DROP TABLE t1;
+--     DROP TABLE t2;
+--     DROP TABLE t3;
+-- 
+--     CREATE TABLE t1(x,y);
+--     CREATE TABLE t2(y,z);
+--     CREATE TABLE t3(x,z);
+-- 
+--     INSERT INTO t1 VALUES(1,2);
+--     INSERT INTO t1 VALUES(3,4);
+-- 
+--     INSERT INTO t2 VALUES(2,3);
+--     INSERT INTO t2 VALUES(4,5);
+-- 
+--     INSERT INTO t3 VALUES(1,3);
+--     INSERT INTO t3 VALUES(3,5);
+-- 
+--     SELECT * FROM t1 JOIN t2 USING (y) JOIN t3 USING(x);
+-- }
+DROP TABLE t1;
+DROP TABLE t2;
+DROP TABLE t3;
+CREATE TABLE t1(x,y);
+CREATE TABLE t2(y,z);
+CREATE TABLE t3(x,z);
+INSERT INTO t1 VALUES(1,2);
+INSERT INTO t1 VALUES(3,4);
+INSERT INTO t2 VALUES(2,3);
+INSERT INTO t2 VALUES(4,5);
+INSERT INTO t3 VALUES(1,3);
+INSERT INTO t3 VALUES(3,5);
+SELECT * FROM t1 JOIN t2 USING (y) JOIN t3 USING(x);

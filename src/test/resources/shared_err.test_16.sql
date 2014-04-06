@@ -1,0 +1,12 @@
+-- shared_err.test
+-- 
+-- execsql {
+--     BEGIN;
+--     INSERT INTO t1 VALUES('201.201.201.201.201', NULL);
+--     UPDATE t1 SET a = '202.202.202.202.202' WHERE a LIKE '201%';
+--     COMMIT;
+-- }
+BEGIN;
+INSERT INTO t1 VALUES('201.201.201.201.201', NULL);
+UPDATE t1 SET a = '202.202.202.202.202' WHERE a LIKE '201%';
+COMMIT;

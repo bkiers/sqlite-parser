@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT coalesce((select 11 from t1 where (b-case (select count(distinct t1.f*e) from t1) when t1.f & 11 & 11*coalesce((select 19 from t1 where (~coalesce((select f from t1 where (t1.c>17)),a)+t1.c not between f and t1.e or 19>=c)),(t1.d)) then a else t1.f end>=f and exists(select 1 from t1 where 13<>c) or  - -t1.f<t1.f)),13) FROM t1 WHERE a not in (f,t1.e,11)}
+SELECT coalesce((select 11 from t1 where (b-case (select count(distinct t1.f*e) from t1) when t1.f & 11 & 11*coalesce((select 19 from t1 where (~coalesce((select f from t1 where (t1.c>17)),a)+t1.c not between f and t1.e or 19>=c)),(t1.d)) then a else t1.f end>=f and exists(select 1 from t1 where 13<>c) or  - -t1.f<t1.f)),13) FROM t1 WHERE a not in (f,t1.e,11)

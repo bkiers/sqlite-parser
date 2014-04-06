@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT coalesce((select (t1.b-(abs(t1.b-~17 & 13+13)/abs(t1.e))* -t1.a- -19+t1.d) from t1 where exists(select 1 from t1 where 19 in (select t1.a from t1 union select  -19 from t1) and a in (c,e,13) and 19 in (select t1.a from t1 union select b from t1) or 13 in (select 19 from t1 union select d from t1) and not t1.c=t1.f or ( -t1.d between e and 19) or  -((17))<>c)),e) FROM t1 WHERE ((abs(a)/abs(f-a)) between  -(abs(++t1.b)/abs(13)) and t1.c)}
+SELECT coalesce((select (t1.b-(abs(t1.b-~17 & 13+13)/abs(t1.e))* -t1.a- -19+t1.d) from t1 where exists(select 1 from t1 where 19 in (select t1.a from t1 union select  -19 from t1) and a in (c,e,13) and 19 in (select t1.a from t1 union select b from t1) or 13 in (select 19 from t1 union select d from t1) and not t1.c=t1.f or ( -t1.d between e and 19) or  -((17))<>c)),e) FROM t1 WHERE ((abs(a)/abs(f-a)) between  -(abs(++t1.b)/abs(13)) and t1.c)

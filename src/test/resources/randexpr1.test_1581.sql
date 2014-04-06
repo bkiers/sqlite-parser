@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT ~(abs(b*t1.b)/abs(case when coalesce((select max((abs(a)/abs(case t1.e when t1.e then c*(t1.d) else t1.a end))) from t1 where b in (select min((t1.a)) from t1 union select + -max(b) from t1)),19)+a not between t1.e and  -19 and 13<=a then (select case cast(avg((a)) AS integer) when min(e)*max(f) then  -(count(distinct 13)) else cast(avg(13) AS integer) end-count(*) | count(distinct d) |  -count(*) from t1) else b end)) FROM t1 WHERE f not between t1.d and b}
+SELECT ~(abs(b*t1.b)/abs(case when coalesce((select max((abs(a)/abs(case t1.e when t1.e then c*(t1.d) else t1.a end))) from t1 where b in (select min((t1.a)) from t1 union select + -max(b) from t1)),19)+a not between t1.e and  -19 and 13<=a then (select case cast(avg((a)) AS integer) when min(e)*max(f) then  -(count(distinct 13)) else cast(avg(13) AS integer) end-count(*) | count(distinct d) |  -count(*) from t1) else b end)) FROM t1 WHERE f not between t1.d and b

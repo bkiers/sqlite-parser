@@ -1,0 +1,10 @@
+-- limit.test
+-- 
+-- execsql {
+--     DELETE FROM t5;
+--     INSERT INTO t5 SELECT x-y, x+y FROM t1 WHERE x ORDER BY x DESC LIMIT 31;
+--     SELECT * FROM t5 ORDER BY x LIMIT 2;
+-- }
+DELETE FROM t5;
+INSERT INTO t5 SELECT x-y, x+y FROM t1 WHERE x ORDER BY x DESC LIMIT 31;
+SELECT * FROM t5 ORDER BY x LIMIT 2;

@@ -1,0 +1,4 @@
+-- select9.test
+-- 
+-- execsql { CREATE VIEW v1 AS SELECT a FROM t1 UNION SELECT d FROM t2 }
+CREATE VIEW v1 AS SELECT a FROM t1 UNION SELECT d FROM t2

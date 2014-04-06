@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT b*case when t1.f not in (a,f,t1.e-e) and t1.b in (select coalesce((select max(t1.e) from t1 where coalesce((select max(~d) from t1 where case when t1.b not in (t1.c,17, -c) then t1.f when t1.c>17 then 17 else e end>t1.f and t1.f not in (b,f,d)),17)>=t1.c or 19<=t1.e),t1.a) from t1 union select (e) from t1) then d when t1.c<e then  -t1.b else b end*c FROM t1 WHERE b not between 13 and d}
+SELECT b*case when t1.f not in (a,f,t1.e-e) and t1.b in (select coalesce((select max(t1.e) from t1 where coalesce((select max(~d) from t1 where case when t1.b not in (t1.c,17, -c) then t1.f when t1.c>17 then 17 else e end>t1.f and t1.f not in (b,f,d)),17)>=t1.c or 19<=t1.e),t1.a) from t1 union select (e) from t1) then d when t1.c<e then  -t1.b else b end*c FROM t1 WHERE b not between 13 and d

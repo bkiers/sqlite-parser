@@ -1,0 +1,22 @@
+-- tkt1473.test
+-- 
+-- execsql {
+--     CREATE TABLE t2(x,y);
+--     INSERT INTO t2 VALUES(1,2);
+--     INSERT INTO t2 SELECT x+2, y+2 FROM t2;
+--     INSERT INTO t2 SELECT x+4, y+4 FROM t2;
+--     INSERT INTO t2 SELECT x+8, y+8 FROM t2;
+--     INSERT INTO t2 SELECT x+16, y+16 FROM t2;
+--     INSERT INTO t2 SELECT x+32, y+32 FROM t2;
+--     INSERT INTO t2 SELECT x+64, y+64 FROM t2;
+--     SELECT count(*), sum(x), sum(y) FROM t2;
+-- }
+CREATE TABLE t2(x,y);
+INSERT INTO t2 VALUES(1,2);
+INSERT INTO t2 SELECT x+2, y+2 FROM t2;
+INSERT INTO t2 SELECT x+4, y+4 FROM t2;
+INSERT INTO t2 SELECT x+8, y+8 FROM t2;
+INSERT INTO t2 SELECT x+16, y+16 FROM t2;
+INSERT INTO t2 SELECT x+32, y+32 FROM t2;
+INSERT INTO t2 SELECT x+64, y+64 FROM t2;
+SELECT count(*), sum(x), sum(y) FROM t2;

@@ -1,0 +1,10 @@
+-- fkey2.test
+-- 
+-- execsql {
+--     INSERT INTO t3 VALUES(1, NULL, NULL);
+--     INSERT INTO t3 VALUES(1, 2, NULL);
+--     INSERT INTO t3 VALUES(1, NULL, 3);
+-- }
+INSERT INTO t3 VALUES(1, NULL, NULL);
+INSERT INTO t3 VALUES(1, 2, NULL);
+INSERT INTO t3 VALUES(1, NULL, 3);

@@ -1,0 +1,10 @@
+-- colmeta.test
+-- 
+-- execsql {
+--     CREATE TABLE abc(a, b, c);
+--     CREATE TABLE abc2(a PRIMARY KEY COLLATE NOCASE, b VARCHAR(32), c);
+--     CREATE TABLE abc3(a NOT NULL, b INTEGER PRIMARY KEY, c);
+-- }
+CREATE TABLE abc(a, b, c);
+CREATE TABLE abc2(a PRIMARY KEY COLLATE NOCASE, b VARCHAR(32), c);
+CREATE TABLE abc3(a NOT NULL, b INTEGER PRIMARY KEY, c);

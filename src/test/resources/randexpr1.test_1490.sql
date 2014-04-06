@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT case t1.d when 17 then 11 | t1.a-17+13+t1.f*t1.e+t1.e-case when d | t1.e in (t1.b,t1.a,c) then  -13 else (b*19) end-(select cast(avg(coalesce((select a from t1 where e in (t1.f,t1.b,f)), -e)) AS integer) from t1)*d-11-t1.e-t1.a else t1.f end FROM t1 WHERE d*13 in (select abs(min(d)) from t1 union select cast(avg(d) AS integer) from t1)}
+SELECT case t1.d when 17 then 11 | t1.a-17+13+t1.f*t1.e+t1.e-case when d | t1.e in (t1.b,t1.a,c) then  -13 else (b*19) end-(select cast(avg(coalesce((select a from t1 where e in (t1.f,t1.b,f)), -e)) AS integer) from t1)*d-11-t1.e-t1.a else t1.f end FROM t1 WHERE d*13 in (select abs(min(d)) from t1 union select cast(avg(d) AS integer) from t1)

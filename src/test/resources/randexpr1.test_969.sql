@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT (abs(case when (13+e in (select min(a) | case abs(min(case when t1.e in (select b from t1 union select a from t1) then t1.e when t1.b=t1.c then t1.b else c end-f)) when ~(cast(avg(c) AS integer)) then min(t1.e) else count(*) end from t1 union select min(f) from t1)) and t1.d not between c and 13 then coalesce((select t1.d from t1 where t1.e<>a),19)-t1.d else 19 end)/abs(c))-c+11+c FROM t1 WHERE NOT (t1.e<f+11-b)}
+SELECT (abs(case when (13+e in (select min(a) | case abs(min(case when t1.e in (select b from t1 union select a from t1) then t1.e when t1.b=t1.c then t1.b else c end-f)) when ~(cast(avg(c) AS integer)) then min(t1.e) else count(*) end from t1 union select min(f) from t1)) and t1.d not between c and 13 then coalesce((select t1.d from t1 where t1.e<>a),19)-t1.d else 19 end)/abs(c))-c+11+c FROM t1 WHERE NOT (t1.e<f+11-b)

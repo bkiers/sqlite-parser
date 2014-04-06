@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT coalesce((select coalesce((select coalesce((select ~e+coalesce((select  -e-+17 from t1 where (select cast(avg(11) AS integer) from t1) between case when +13+13 between 19 and t1.c then t1.d else 13 end and 13),t1.c)* -(19)+17-t1.a+e from t1 where t1.b>=t1.f),t1.b) | t1.f from t1 where f in (select d from t1 union select 11 from t1)),t1.b) from t1 where t1.b=13),t1.d) FROM t1 WHERE t1.f<>(abs(t1.c)/abs(t1.a))}
+SELECT coalesce((select coalesce((select coalesce((select ~e+coalesce((select  -e-+17 from t1 where (select cast(avg(11) AS integer) from t1) between case when +13+13 between 19 and t1.c then t1.d else 13 end and 13),t1.c)* -(19)+17-t1.a+e from t1 where t1.b>=t1.f),t1.b) | t1.f from t1 where f in (select d from t1 union select 11 from t1)),t1.b) from t1 where t1.b=13),t1.d) FROM t1 WHERE t1.f<>(abs(t1.c)/abs(t1.a))

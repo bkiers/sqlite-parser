@@ -1,0 +1,4 @@
+-- wal2.test
+-- 
+-- execsql { PRAGMA LOCKING_MODE = EXCLUSIVE }
+PRAGMA LOCKING_MODE = EXCLUSIVE

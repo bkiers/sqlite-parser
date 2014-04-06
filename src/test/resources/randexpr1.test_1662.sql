@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT e*(case when +t1.c+t1.e+f<=13 then (select case cast(avg(coalesce((select (t1.f*a)*11 from t1 where c<>t1.a),b)) AS integer)+cast(avg(b) AS integer)+max( -b)-min(e) when max(11) then cast(avg(t1.e) AS integer) else cast(avg(t1.b) AS integer) end from t1) when ~11*t1.d<=t1.b or (t1.e=t1.a) then t1.b else  -19 end)+e FROM t1 WHERE a>13*d+t1.e+c}
+SELECT e*(case when +t1.c+t1.e+f<=13 then (select case cast(avg(coalesce((select (t1.f*a)*11 from t1 where c<>t1.a),b)) AS integer)+cast(avg(b) AS integer)+max( -b)-min(e) when max(11) then cast(avg(t1.e) AS integer) else cast(avg(t1.b) AS integer) end from t1) when ~11*t1.d<=t1.b or (t1.e=t1.a) then t1.b else  -19 end)+e FROM t1 WHERE a>13*d+t1.e+c

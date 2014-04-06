@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT (abs(case when a>=b then t1.c-case when not exists(select 1 from t1 where case d when +17 then 19+c else 11 end-(abs((select  - -cast(avg(case when (11- -(abs(e)/abs(13))-t1.f<t1.e) then t1.c+d else a end-t1.c) AS integer) from t1))/abs(t1.a))<=b) then  -e+d else (t1.c) end else 19 end)/abs(c)) FROM t1 WHERE NOT (f<>11)}
+SELECT (abs(case when a>=b then t1.c-case when not exists(select 1 from t1 where case d when +17 then 19+c else 11 end-(abs((select  - -cast(avg(case when (11- -(abs(e)/abs(13))-t1.f<t1.e) then t1.c+d else a end-t1.c) AS integer) from t1))/abs(t1.a))<=b) then  -e+d else (t1.c) end else 19 end)/abs(c)) FROM t1 WHERE NOT (f<>11)

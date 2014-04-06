@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT (select cast(avg(f) AS integer) | ~++cast(avg((abs(17)/abs( -f+(c-coalesce((select case when c=d and t1.e=t1.b then e when e in (t1.b,19,t1.c) then 17 else d end from t1 where e between t1.a and t1.c),a))+a))) AS integer)-abs( -min(t1.c))-abs(max((t1.b)) |  -~(count(*))+max(17))+cast(avg(t1.a) AS integer) | min(a)*(count(*))*min(17) from t1) FROM t1 WHERE NOT (b-(t1.e*t1.e)-t1.d=t1.c)}
+SELECT (select cast(avg(f) AS integer) | ~++cast(avg((abs(17)/abs( -f+(c-coalesce((select case when c=d and t1.e=t1.b then e when e in (t1.b,19,t1.c) then 17 else d end from t1 where e between t1.a and t1.c),a))+a))) AS integer)-abs( -min(t1.c))-abs(max((t1.b)) |  -~(count(*))+max(17))+cast(avg(t1.a) AS integer) | min(a)*(count(*))*min(17) from t1) FROM t1 WHERE NOT (b-(t1.e*t1.e)-t1.d=t1.c)

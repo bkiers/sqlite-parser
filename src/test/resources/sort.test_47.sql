@@ -1,0 +1,22 @@
+-- sort.test
+-- 
+-- execsql {
+--     CREATE TABLE t4(
+--       a INTEGER,
+--       b VARCHAR(30)
+--     );
+--     INSERT INTO t4 VALUES(1,1);
+--     INSERT INTO t4 VALUES(2,2);
+--     INSERT INTO t4 VALUES(11,11);
+--     INSERT INTO t4 VALUES(12,12);
+--     SELECT a FROM t4 ORDER BY 1;
+-- }
+CREATE TABLE t4(
+a INTEGER,
+b VARCHAR(30)
+);
+INSERT INTO t4 VALUES(1,1);
+INSERT INTO t4 VALUES(2,2);
+INSERT INTO t4 VALUES(11,11);
+INSERT INTO t4 VALUES(12,12);
+SELECT a FROM t4 ORDER BY 1;

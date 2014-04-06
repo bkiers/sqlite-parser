@@ -1,0 +1,40 @@
+-- e_fkey.test
+-- 
+-- execsql {
+--     CREATE TABLE c1(c REFERENCES nosuchtable, d);
+-- 
+--     CREATE TABLE p2(a, b, UNIQUE(a, b));
+--     CREATE TABLE c2(c, d, FOREIGN KEY(c, d) REFERENCES p2(a, x));
+-- 
+--     CREATE TABLE p3(a PRIMARY KEY, b);
+--     CREATE TABLE c3(c REFERENCES p3(b), d);
+-- 
+--     CREATE TABLE p4(a PRIMARY KEY, b);
+--     CREATE UNIQUE INDEX p4i ON p4(b COLLATE nocase);
+--     CREATE TABLE c4(c REFERENCES p4(b), d);
+-- 
+--     CREATE TABLE p5(a PRIMARY KEY, b COLLATE nocase);
+--     CREATE UNIQUE INDEX p5i ON p5(b COLLATE binary);
+--     CREATE TABLE c5(c REFERENCES p5(b), d);
+-- 
+--     CREATE TABLE p6(a PRIMARY KEY, b);
+--     CREATE TABLE c6(c, d, FOREIGN KEY(c, d) REFERENCES p6);
+-- 
+--     CREATE TABLE p7(a, b, PRIMARY KEY(a, b));
+--     CREATE TABLE c7(c, d REFERENCES p7);
+-- }
+CREATE TABLE c1(c REFERENCES nosuchtable, d);
+CREATE TABLE p2(a, b, UNIQUE(a, b));
+CREATE TABLE c2(c, d, FOREIGN KEY(c, d) REFERENCES p2(a, x));
+CREATE TABLE p3(a PRIMARY KEY, b);
+CREATE TABLE c3(c REFERENCES p3(b), d);
+CREATE TABLE p4(a PRIMARY KEY, b);
+CREATE UNIQUE INDEX p4i ON p4(b COLLATE nocase);
+CREATE TABLE c4(c REFERENCES p4(b), d);
+CREATE TABLE p5(a PRIMARY KEY, b COLLATE nocase);
+CREATE UNIQUE INDEX p5i ON p5(b COLLATE binary);
+CREATE TABLE c5(c REFERENCES p5(b), d);
+CREATE TABLE p6(a PRIMARY KEY, b);
+CREATE TABLE c6(c, d, FOREIGN KEY(c, d) REFERENCES p6);
+CREATE TABLE p7(a, b, PRIMARY KEY(a, b));
+CREATE TABLE c7(c, d REFERENCES p7);

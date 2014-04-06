@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT ~+coalesce((select (select count(distinct +coalesce((select c from t1 where e>=13),+c)-t1.c) from t1) from t1 where case a when t1.d*(select cast(avg(case when t1.b*coalesce((select 17 from t1 where case  -a when t1.b then d else (t1.f) end not in ((t1.e),a,t1.f)),t1.c)-c in (d,a,t1.c) then c else b end) AS integer) from t1)+t1.d then 13 else t1.e end not in (19,a,17)),13) FROM t1 WHERE +c in (a,17,t1.d)}
+SELECT ~+coalesce((select (select count(distinct +coalesce((select c from t1 where e>=13),+c)-t1.c) from t1) from t1 where case a when t1.d*(select cast(avg(case when t1.b*coalesce((select 17 from t1 where case  -a when t1.b then d else (t1.f) end not in ((t1.e),a,t1.f)),t1.c)-c in (d,a,t1.c) then c else b end) AS integer) from t1)+t1.d then 13 else t1.e end not in (19,a,17)),13) FROM t1 WHERE +c in (a,17,t1.d)

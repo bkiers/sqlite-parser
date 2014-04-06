@@ -1,0 +1,8 @@
+-- trigger1.test
+-- 
+-- execsql {
+--         INSERT INTO t3 VALUES(1,3);
+--         SELECT * FROM t3 UNION ALL SELECT 99, 99 UNION ALL SELECT * FROM t4;
+-- }
+INSERT INTO t3 VALUES(1,3);
+SELECT * FROM t3 UNION ALL SELECT 99, 99 UNION ALL SELECT * FROM t4;

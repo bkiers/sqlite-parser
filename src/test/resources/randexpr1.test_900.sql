@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT c | coalesce((select max(~b*case +coalesce((select max( -(abs(c)/abs(11))+case when t1.c*17 not in (a,a,c) then t1.e when t1.b in (select 13 from t1 union select (c) from t1) then  -(t1.c) else d end* -t1.c+a) from t1 where t1.f>=11),17) | t1.b when t1.b then c else t1.a end) from t1 where t1.f>t1.a),t1.c)+13*17 FROM t1 WHERE NOT (t1.e<t1.c*(select min((select count(*) from t1)) from t1)*f)}
+SELECT c | coalesce((select max(~b*case +coalesce((select max( -(abs(c)/abs(11))+case when t1.c*17 not in (a,a,c) then t1.e when t1.b in (select 13 from t1 union select (c) from t1) then  -(t1.c) else d end* -t1.c+a) from t1 where t1.f>=11),17) | t1.b when t1.b then c else t1.a end) from t1 where t1.f>t1.a),t1.c)+13*17 FROM t1 WHERE NOT (t1.e<t1.c*(select min((select count(*) from t1)) from t1)*f)

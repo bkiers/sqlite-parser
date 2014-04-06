@@ -1,0 +1,19 @@
+-- tkt2822.test
+-- 
+-- execsql {
+--     CREATE TABLE t6a(p,q);
+--     INSERT INTO t6a VALUES(1,8);
+--     INSERT INTO t6a VALUES(9,2);
+--     CREATE TABLE t6b(x,y);
+--     INSERT INTO t6b VALUES(1,7);
+--     INSERT INTO t6b VALUES(7,2);
+-- 
+--     SELECT p, q FROM t6a UNION ALL SELECT x, y FROM t6b ORDER BY 1, 2
+-- }
+CREATE TABLE t6a(p,q);
+INSERT INTO t6a VALUES(1,8);
+INSERT INTO t6a VALUES(9,2);
+CREATE TABLE t6b(x,y);
+INSERT INTO t6b VALUES(1,7);
+INSERT INTO t6b VALUES(7,2);
+SELECT p, q FROM t6a UNION ALL SELECT x, y FROM t6b ORDER BY 1, 2

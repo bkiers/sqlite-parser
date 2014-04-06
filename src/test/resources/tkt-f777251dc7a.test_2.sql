@@ -1,0 +1,4 @@
+-- tkt-f777251dc7a.test
+-- 
+-- db eval {INSERT OR ROLLBACK INTO t1 VALUES(1)}
+INSERT OR ROLLBACK INTO t1 VALUES(1)

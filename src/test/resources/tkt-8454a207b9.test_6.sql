@@ -1,0 +1,8 @@
+-- tkt-8454a207b9.test
+-- 
+-- db eval {
+--     ALTER TABLE t1 ADD COLUMN g DEFAULT -9223372036854775808;
+--     SELECT g, typeof(g) FROM t1;
+-- }
+ALTER TABLE t1 ADD COLUMN g DEFAULT -9223372036854775808;
+SELECT g, typeof(g) FROM t1;

@@ -1,0 +1,8 @@
+-- ioerr5.test
+-- 
+-- execsql {
+--         BEGIN EXCLUSIVE;
+--         INSERT INTO a VALUES(1, 'ABCDEFGHIJKLMNOP');
+-- }
+BEGIN EXCLUSIVE;
+INSERT INTO a VALUES(1, 'ABCDEFGHIJKLMNOP');

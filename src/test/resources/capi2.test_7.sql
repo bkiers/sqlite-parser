@@ -1,0 +1,20 @@
+-- capi2.test
+-- 
+-- execsql {
+--     BEGIN;
+--     CREATE TABLE t3(x counter);
+--     INSERT INTO t3 VALUES(1);
+--     INSERT INTO t3 VALUES(2);
+--     INSERT INTO t3 SELECT x+2 FROM t3;
+--     INSERT INTO t3 SELECT x+4 FROM t3;
+--     INSERT INTO t3 SELECT x+8 FROM t3;
+--     COMMIT;
+-- }
+BEGIN;
+CREATE TABLE t3(x counter);
+INSERT INTO t3 VALUES(1);
+INSERT INTO t3 VALUES(2);
+INSERT INTO t3 SELECT x+2 FROM t3;
+INSERT INTO t3 SELECT x+4 FROM t3;
+INSERT INTO t3 SELECT x+8 FROM t3;
+COMMIT;

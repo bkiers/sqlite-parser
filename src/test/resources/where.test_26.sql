@@ -1,0 +1,16 @@
+-- where.test
+-- 
+-- execsql {
+--     CREATE TABLE a1(id INTEGER PRIMARY KEY, v);
+--     CREATE TABLE a2(id INTEGER PRIMARY KEY, v);
+--     INSERT INTO a1 VALUES(1, 'one');
+--     INSERT INTO a1 VALUES(2, 'two');
+--     INSERT INTO a2 VALUES(1, 'one');
+--     INSERT INTO a2 VALUES(2, 'two');
+-- }
+CREATE TABLE a1(id INTEGER PRIMARY KEY, v);
+CREATE TABLE a2(id INTEGER PRIMARY KEY, v);
+INSERT INTO a1 VALUES(1, 'one');
+INSERT INTO a1 VALUES(2, 'two');
+INSERT INTO a2 VALUES(1, 'one');
+INSERT INTO a2 VALUES(2, 'two');

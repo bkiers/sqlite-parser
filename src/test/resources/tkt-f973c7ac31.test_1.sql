@@ -1,0 +1,10 @@
+-- tkt-f973c7ac31.test
+-- 
+-- execsql {
+--     CREATE TABLE t(c1 INTEGER, c2 INTEGER);
+--     INSERT INTO t VALUES(5, 5);
+--     INSERT INTO t VALUES(5, 4);
+-- }
+CREATE TABLE t(c1 INTEGER, c2 INTEGER);
+INSERT INTO t VALUES(5, 5);
+INSERT INTO t VALUES(5, 4);

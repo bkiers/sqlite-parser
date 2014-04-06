@@ -1,0 +1,6 @@
+-- insert.test
+-- 
+-- execsql {
+--       INSERT INTO t3 SELECT * FROM (SELECT * FROM t3 UNION ALL SELECT 1,2,3)
+-- }
+INSERT INTO t3 SELECT * FROM (SELECT * FROM t3 UNION ALL SELECT 1,2,3)

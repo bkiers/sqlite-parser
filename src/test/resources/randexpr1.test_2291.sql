@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT case when 17 in (case (abs(coalesce((select max((select cast(avg(case when 17-(t1.b)+t1.a | b+b in (select b from t1 union select 17 from t1) then c when t1.f in (select t1.a from t1 union select 19 from t1) then 11 else t1.c end) AS integer) from t1)) from t1 where t1.e>=t1.e or (b)<b or t1.a>=b and c not in (f,t1.a,t1.a)),d))/abs(t1.b)) when 17 then t1.b else 13 end-a,13,17) then t1.a else  -d end FROM t1 WHERE t1.e<t1.e}
+SELECT case when 17 in (case (abs(coalesce((select max((select cast(avg(case when 17-(t1.b)+t1.a | b+b in (select b from t1 union select 17 from t1) then c when t1.f in (select t1.a from t1 union select 19 from t1) then 11 else t1.c end) AS integer) from t1)) from t1 where t1.e>=t1.e or (b)<b or t1.a>=b and c not in (f,t1.a,t1.a)),d))/abs(t1.b)) when 17 then t1.b else 13 end-a,13,17) then t1.a else  -d end FROM t1 WHERE t1.e<t1.e

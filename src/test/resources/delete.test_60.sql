@@ -1,0 +1,14 @@
+-- delete.test
+-- 
+-- execsql {
+--     CREATE TABLE t3(a);
+--     INSERT INTO t3 VALUES(1);
+--     INSERT INTO t3 SELECT a+1 FROM t3;
+--     INSERT INTO t3 SELECT a+2 FROM t3;
+--     SELECT * FROM t3;
+-- }
+CREATE TABLE t3(a);
+INSERT INTO t3 VALUES(1);
+INSERT INTO t3 SELECT a+1 FROM t3;
+INSERT INTO t3 SELECT a+2 FROM t3;
+SELECT * FROM t3;

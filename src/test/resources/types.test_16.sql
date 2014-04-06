@@ -1,0 +1,12 @@
+-- types.test
+-- 
+-- execsql {
+--     CREATE TABLE t2(a float);
+--     INSERT INTO t2 VALUES(0.0);
+--     INSERT INTO t2 VALUES(12345.678);
+--     INSERT INTO t2 VALUES(-12345.678);
+-- }
+CREATE TABLE t2(a float);
+INSERT INTO t2 VALUES(0.0);
+INSERT INTO t2 VALUES(12345.678);
+INSERT INTO t2 VALUES(-12345.678);

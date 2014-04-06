@@ -1,0 +1,10 @@
+-- triggerA.test
+-- 
+-- db eval {
+--      CREATE VIEW v3 AS
+--        SELECT CAST(x AS TEXT) AS c1 FROM t1 UNION SELECT y FROM t1;
+--      SELECT * FROM v3 ORDER BY c1;
+-- }
+CREATE VIEW v3 AS
+SELECT CAST(x AS TEXT) AS c1 FROM t1 UNION SELECT y FROM t1;
+SELECT * FROM v3 ORDER BY c1;

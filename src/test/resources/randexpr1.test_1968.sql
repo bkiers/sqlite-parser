@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT (abs(case t1.f | d when coalesce((select max(~b) from t1 where +t1.a<> -case t1.f when +b-case when (17 in (select count(distinct b)+count(distinct t1.a) from t1 union select count(distinct 13) from t1)) then d else 13 end+t1.d | d* -11+t1.d*t1.f | a-17 then 13 else c end*t1.e),d) then t1.b else d end)/abs(t1.a))*19 FROM t1 WHERE NOT (t1.f in (select count(*) from t1 union select count(*) from t1))}
+SELECT (abs(case t1.f | d when coalesce((select max(~b) from t1 where +t1.a<> -case t1.f when +b-case when (17 in (select count(distinct b)+count(distinct t1.a) from t1 union select count(distinct 13) from t1)) then d else 13 end+t1.d | d* -11+t1.d*t1.f | a-17 then 13 else c end*t1.e),d) then t1.b else d end)/abs(t1.a))*19 FROM t1 WHERE NOT (t1.f in (select count(*) from t1 union select count(*) from t1))

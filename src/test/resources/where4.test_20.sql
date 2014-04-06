@@ -1,0 +1,30 @@
+-- where4.test
+-- 
+-- execsql {
+--     BEGIN;
+--     CREATE TABLE t8(a, b, c, d);
+--     CREATE INDEX t8_i ON t8(a, b, c);
+--     CREATE TABLE t7(i);
+-- 
+--     INSERT INTO t7 VALUES(1);
+--     INSERT INTO t7 SELECT i*2 FROM t7;
+--     INSERT INTO t7 SELECT i*2 FROM t7;
+--     INSERT INTO t7 SELECT i*2 FROM t7;
+--     INSERT INTO t7 SELECT i*2 FROM t7;
+--     INSERT INTO t7 SELECT i*2 FROM t7;
+--     INSERT INTO t7 SELECT i*2 FROM t7;
+-- 
+--     COMMIT;
+-- }
+BEGIN;
+CREATE TABLE t8(a, b, c, d);
+CREATE INDEX t8_i ON t8(a, b, c);
+CREATE TABLE t7(i);
+INSERT INTO t7 VALUES(1);
+INSERT INTO t7 SELECT i*2 FROM t7;
+INSERT INTO t7 SELECT i*2 FROM t7;
+INSERT INTO t7 SELECT i*2 FROM t7;
+INSERT INTO t7 SELECT i*2 FROM t7;
+INSERT INTO t7 SELECT i*2 FROM t7;
+INSERT INTO t7 SELECT i*2 FROM t7;
+COMMIT;

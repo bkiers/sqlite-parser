@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT e*(select  -max((case when  -case when (+(abs(f)/abs(17))*13)> -a then 17 else f end |  -t1.f-e*11<>11 then c when exists(select 1 from t1 where not exists(select 1 from t1 where t1.b not in (t1.d,19,d) and t1.d<>11)) or 13<= -t1.f then 11 else d end-t1.a)*e) from t1) FROM t1 WHERE exists(select 1 from t1 where c<>a)}
+SELECT e*(select  -max((case when  -case when (+(abs(f)/abs(17))*13)> -a then 17 else f end |  -t1.f-e*11<>11 then c when exists(select 1 from t1 where not exists(select 1 from t1 where t1.b not in (t1.d,19,d) and t1.d<>11)) or 13<= -t1.f then 11 else d end-t1.a)*e) from t1) FROM t1 WHERE exists(select 1 from t1 where c<>a)

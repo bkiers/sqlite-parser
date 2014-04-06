@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT case when t1.b= -b then e else (select  -(count(distinct t1.a))*max(c)-count(*)+count(distinct t1.b+d)*min(t1.f-case when 19 in (select t1.d from t1 union select e from t1) then 17 when f<=t1.c then t1.b else e end-(d)*c)-count(distinct t1.d)*case +max(f) when max(17) & max(d) &  -(cast(avg(d) AS integer)) then  -cast(avg(11) AS integer) else  -count(distinct 11) end*min(t1.d) from t1) end FROM t1 WHERE t1.f>=f}
+SELECT case when t1.b= -b then e else (select  -(count(distinct t1.a))*max(c)-count(*)+count(distinct t1.b+d)*min(t1.f-case when 19 in (select t1.d from t1 union select e from t1) then 17 when f<=t1.c then t1.b else e end-(d)*c)-count(distinct t1.d)*case +max(f) when max(17) & max(d) &  -(cast(avg(d) AS integer)) then  -cast(avg(11) AS integer) else  -count(distinct 11) end*min(t1.d) from t1) end FROM t1 WHERE t1.f>=f

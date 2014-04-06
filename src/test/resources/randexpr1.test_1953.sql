@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT coalesce((select max((abs(e)/abs(t1.a))) from t1 where (select (count(distinct ~ - -11- -t1.a-a*t1.d & 11-19+t1.f+17*c)-cast(avg(17) AS integer)+(cast(avg((19)) AS integer))) from t1)>a),17 & 11+17)+e-(c)-d-b FROM t1 WHERE NOT ((d>t1.d-case when case +(abs(t1.d | t1.f)/abs(t1.b)) when +b then coalesce((select max(t1.d | t1.c+(11+t1.d-t1.c)) from t1 where ((t1.e=17))),17) else t1.c end>=b then a else t1.f end) and (not (e<=c)) and not (t1.c<>b))}
+SELECT coalesce((select max((abs(e)/abs(t1.a))) from t1 where (select (count(distinct ~ - -11- -t1.a-a*t1.d & 11-19+t1.f+17*c)-cast(avg(17) AS integer)+(cast(avg((19)) AS integer))) from t1)>a),17 & 11+17)+e-(c)-d-b FROM t1 WHERE NOT ((d>t1.d-case when case +(abs(t1.d | t1.f)/abs(t1.b)) when +b then coalesce((select max(t1.d | t1.c+(11+t1.d-t1.c)) from t1 where ((t1.e=17))),17) else t1.c end>=b then a else t1.f end) and (not (e<=c)) and not (t1.c<>b))

@@ -1,0 +1,4 @@
+-- walthread.test
+-- 
+-- execsql { CREATE TABLE t1(x INTEGER PRIMARY KEY, y UNIQUE) }
+CREATE TABLE t1(x INTEGER PRIMARY KEY, y UNIQUE)

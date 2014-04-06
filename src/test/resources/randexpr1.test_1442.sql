@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT t1.e*coalesce((select 17 from t1 where (19>(abs(case coalesce((select coalesce((select ~11 from t1 where b not between (13) and b),17) from t1 where 19 not between e+b+13 and  -t1.d),t1.f) when d then t1.e else t1.d end-e | f)/abs((e)))) and (t1.b<=a and 11<> - -t1.e) and t1.d<d),c) FROM t1 WHERE t1.a>t1.a | t1.c}
+SELECT t1.e*coalesce((select 17 from t1 where (19>(abs(case coalesce((select coalesce((select ~11 from t1 where b not between (13) and b),17) from t1 where 19 not between e+b+13 and  -t1.d),t1.f) when d then t1.e else t1.d end-e | f)/abs((e)))) and (t1.b<=a and 11<> - -t1.e) and t1.d<d),c) FROM t1 WHERE t1.a>t1.a | t1.c

@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT c-case when t1.e>coalesce((select case  -t1.d-case when d in (select  -t1.f from t1 union select t1.c+t1.c from t1) and (t1.a<=t1.a) then 11*(17) when d between 11 and e or  -c<>t1.f then 19 else 19 end+11 when 19 then b else t1.b end-t1.a from t1 where not e<=f),( -t1.f)) then b when ((d<c)) then 19 else f end FROM t1 WHERE t1.c in (t1.c,~19,13)}
+SELECT c-case when t1.e>coalesce((select case  -t1.d-case when d in (select  -t1.f from t1 union select t1.c+t1.c from t1) and (t1.a<=t1.a) then 11*(17) when d between 11 and e or  -c<>t1.f then 19 else 19 end+11 when 19 then b else t1.b end-t1.a from t1 where not e<=f),( -t1.f)) then b when ((d<c)) then 19 else f end FROM t1 WHERE t1.c in (t1.c,~19,13)

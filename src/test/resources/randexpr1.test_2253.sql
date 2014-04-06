@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT case when case when case when case when t1.b<> -c then (b)* -19 else t1.d end<=11 or 17 not between t1.f and 13 or a not in (t1.c,t1.b,11) then c else c end<>t1.a and (f) in (select cast(avg(11) AS integer) from t1 union select case max(b) when (min(t1.c)) then count(distinct f) else max(19) end from t1) then 13 else d end & f-t1.d<=t1.f then f else 19 end FROM t1 WHERE ((f not between t1.f and d))}
+SELECT case when case when case when case when t1.b<> -c then (b)* -19 else t1.d end<=11 or 17 not between t1.f and 13 or a not in (t1.c,t1.b,11) then c else c end<>t1.a and (f) in (select cast(avg(11) AS integer) from t1 union select case max(b) when (min(t1.c)) then count(distinct f) else max(19) end from t1) then 13 else d end & f-t1.d<=t1.f then f else 19 end FROM t1 WHERE ((f not between t1.f and d))

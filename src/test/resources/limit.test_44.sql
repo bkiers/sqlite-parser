@@ -1,0 +1,6 @@
+-- limit.test
+-- 
+-- execsql {
+--     SELECT x FROM t2 UNION SELECT x+2 FROM t2 LIMIT 2 OFFSET 1;
+-- }
+SELECT x FROM t2 UNION SELECT x+2 FROM t2 LIMIT 2 OFFSET 1;

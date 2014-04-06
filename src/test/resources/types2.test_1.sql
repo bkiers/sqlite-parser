@@ -1,0 +1,26 @@
+-- types2.test
+-- 
+-- execsql {
+--   CREATE TABLE t1(
+--     i1 INTEGER,
+--     i2 INTEGER,
+--     n1 NUMERIC,
+--     n2 NUMERIC,
+--     t1 TEXT,
+--     t2 TEXT,
+--     o1 BLOB,
+--     o2 BLOB
+--   );
+--   INSERT INTO t1 VALUES(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+-- }
+CREATE TABLE t1(
+i1 INTEGER,
+i2 INTEGER,
+n1 NUMERIC,
+n2 NUMERIC,
+t1 TEXT,
+t2 TEXT,
+o1 BLOB,
+o2 BLOB
+);
+INSERT INTO t1 VALUES(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);

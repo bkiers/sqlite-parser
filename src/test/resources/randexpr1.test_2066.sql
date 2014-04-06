@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT ~~coalesce((select t1.a from t1 where case f*+e when ~11-coalesce((select max(t1.f) from t1 where t1.f>b),~case when b between 17 and e & coalesce((select max(a) from t1 where (f in (t1.b,f,a))),13) then f when  -d<=d then t1.e else e end+13)+13 then d else d end+t1.f=d),b)+b FROM t1 WHERE b=b}
+SELECT ~~coalesce((select t1.a from t1 where case f*+e when ~11-coalesce((select max(t1.f) from t1 where t1.f>b),~case when b between 17 and e & coalesce((select max(a) from t1 where (f in (t1.b,f,a))),13) then f when  -d<=d then t1.e else e end+13)+13 then d else d end+t1.f=d),b)+b FROM t1 WHERE b=b

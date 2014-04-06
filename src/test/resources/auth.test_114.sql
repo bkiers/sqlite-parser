@@ -1,0 +1,10 @@
+-- auth.test
+-- 
+-- execsql {
+--     CREATE TABLE t3(a PRIMARY KEY, b, c);
+--     CREATE INDEX t3_idx1 ON t3(c COLLATE BINARY);
+--     CREATE INDEX t3_idx2 ON t3(b COLLATE NOCASE);
+-- }
+CREATE TABLE t3(a PRIMARY KEY, b, c);
+CREATE INDEX t3_idx1 ON t3(c COLLATE BINARY);
+CREATE INDEX t3_idx2 ON t3(b COLLATE NOCASE);

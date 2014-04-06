@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT case when (((t1.c)<=a-11*t1.e)) then t1.b else a end | ((abs(b*(abs(t1.e | +c)/abs(11)))/abs(t1.a))) FROM t1 WHERE NOT (case when t1.e in (select t1.a-e from t1 union select t1.e from t1) then 19*coalesce((select a*t1.c-19+f+t1.d-case case when 11>=d then f when not f<>17 then t1.d else t1.f end+t1.e-t1.c when d then b else t1.f end from t1 where t1.f>a), -t1.a)- -(t1.c)-t1.e+b else 11 end<t1.f)}
+SELECT case when (((t1.c)<=a-11*t1.e)) then t1.b else a end | ((abs(b*(abs(t1.e | +c)/abs(11)))/abs(t1.a))) FROM t1 WHERE NOT (case when t1.e in (select t1.a-e from t1 union select t1.e from t1) then 19*coalesce((select a*t1.c-19+f+t1.d-case case when 11>=d then f when not f<>17 then t1.d else t1.f end+t1.e-t1.c when d then b else t1.f end from t1 where t1.f>a), -t1.a)- -(t1.c)-t1.e+b else 11 end<t1.f)

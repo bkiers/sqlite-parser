@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT case when not (select  -case (( -(count(*)) | cast(avg(d) AS integer))) | min((e)) when cast(avg(d) AS integer) then count(*) else count(distinct t1.e) end+max((17)) | max(t1.a)+ -count(*) from t1)-e in (t1.a,11-t1.d,t1.b) and coalesce((select max(t1.c) from t1 where case t1.d when t1.f then d else b end<>t1.d),d)>=13 then coalesce((select  -17+e from t1 where t1.a<=19),b) else (19) end FROM t1 WHERE (abs( -t1.f)/abs(t1.a))<=t1.d}
+SELECT case when not (select  -case (( -(count(*)) | cast(avg(d) AS integer))) | min((e)) when cast(avg(d) AS integer) then count(*) else count(distinct t1.e) end+max((17)) | max(t1.a)+ -count(*) from t1)-e in (t1.a,11-t1.d,t1.b) and coalesce((select max(t1.c) from t1 where case t1.d when t1.f then d else b end<>t1.d),d)>=13 then coalesce((select  -17+e from t1 where t1.a<=19),b) else (19) end FROM t1 WHERE (abs( -t1.f)/abs(t1.a))<=t1.d

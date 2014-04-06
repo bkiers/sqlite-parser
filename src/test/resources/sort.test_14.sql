@@ -1,0 +1,4 @@
+-- sort.test
+-- 
+-- execsql {SELECT n FROM t1 ORDER BY log asc, flt}
+SELECT n FROM t1 ORDER BY log asc, flt

@@ -1,0 +1,16 @@
+-- sort.test
+-- 
+-- execsql {
+--     CREATE TABLE t6(x, y);
+--     INSERT INTO t6 VALUES(1,1);
+--     INSERT INTO t6 VALUES(2,'1');
+--     INSERT INTO t6 VALUES(3,x'31');
+--     INSERT INTO t6 VALUES(4,NULL);
+--     SELECT x FROM t6 ORDER BY y;
+-- }
+CREATE TABLE t6(x, y);
+INSERT INTO t6 VALUES(1,1);
+INSERT INTO t6 VALUES(2,'1');
+INSERT INTO t6 VALUES(3,x'31');
+INSERT INTO t6 VALUES(4,NULL);
+SELECT x FROM t6 ORDER BY y;

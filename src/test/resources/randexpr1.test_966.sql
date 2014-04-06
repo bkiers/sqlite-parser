@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT e*case +case when not (select max(17) from t1)>=case when not d=c+t1.c then 11 else 11 end or (c in (select t1.c from t1 union select c from t1) or 11<=t1.a) or d<=11 or 19 in ( -13,d,19) or a not between 13 and (t1.c) then case when t1.f<=(t1.a) then t1.e+13*e when (t1.b) not between f and a then c else 11 end*11 else a end when 19 then t1.a else 17 end FROM t1 WHERE b<>17}
+SELECT e*case +case when not (select max(17) from t1)>=case when not d=c+t1.c then 11 else 11 end or (c in (select t1.c from t1 union select c from t1) or 11<=t1.a) or d<=11 or 19 in ( -13,d,19) or a not between 13 and (t1.c) then case when t1.f<=(t1.a) then t1.e+13*e when (t1.b) not between f and a then c else 11 end*11 else a end when 19 then t1.a else 17 end FROM t1 WHERE b<>17

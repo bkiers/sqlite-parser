@@ -1,0 +1,12 @@
+-- insert.test
+-- 
+-- execsql {
+--       CREATE TABLE t1(a INTEGER PRIMARY KEY, b UNIQUE);
+--       INSERT INTO t1 VALUES(1,2);
+--       INSERT INTO t1 VALUES(2,3);
+--       SELECT b FROM t1 WHERE b=2;
+-- }
+CREATE TABLE t1(a INTEGER PRIMARY KEY, b UNIQUE);
+INSERT INTO t1 VALUES(1,2);
+INSERT INTO t1 VALUES(2,3);
+SELECT b FROM t1 WHERE b=2;

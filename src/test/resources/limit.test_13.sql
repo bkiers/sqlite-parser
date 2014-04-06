@@ -1,0 +1,4 @@
+-- limit.test
+-- 
+-- execsql {SELECT x FROM t1 ORDER BY x LIMIT 50 OFFSET 30}
+SELECT x FROM t1 ORDER BY x LIMIT 50 OFFSET 30

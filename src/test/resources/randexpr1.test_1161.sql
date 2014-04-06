@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT +(abs(d+d+a+b+t1.d)/abs(coalesce((select (select abs(cast(avg(17-11+e*t1.d) AS integer)++cast(avg(coalesce((select max(11-+t1.f- -e-a* -19+t1.a) from t1 where  -a in (select 11 from t1 union select  -11 from t1)),e)) AS integer)) from t1) from t1 where f=17),t1.b)*a)) FROM t1 WHERE NOT (t1.b in (select t1.e from t1 union select coalesce((select max(11) from t1 where d<t1.f),f) from t1))}
+SELECT +(abs(d+d+a+b+t1.d)/abs(coalesce((select (select abs(cast(avg(17-11+e*t1.d) AS integer)++cast(avg(coalesce((select max(11-+t1.f- -e-a* -19+t1.a) from t1 where  -a in (select 11 from t1 union select  -11 from t1)),e)) AS integer)) from t1) from t1 where f=17),t1.b)*a)) FROM t1 WHERE NOT (t1.b in (select t1.e from t1 union select coalesce((select max(11) from t1 where d<t1.f),f) from t1))

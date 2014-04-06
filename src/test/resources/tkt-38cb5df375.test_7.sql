@@ -1,0 +1,10 @@
+-- tkt-38cb5df375.test
+-- 
+-- execsql {
+--       SELECT * FROM (SELECT * FROM t1 ORDER BY a LIMIT 3)
+--       UNION ALL SELECT 9 FROM (SELECT a FROM t1)
+--       LIMIT ii;
+-- }
+SELECT * FROM (SELECT * FROM t1 ORDER BY a LIMIT 3)
+UNION ALL SELECT 9 FROM (SELECT a FROM t1)
+LIMIT 42;

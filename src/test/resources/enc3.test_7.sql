@@ -1,0 +1,10 @@
+-- enc3.test
+-- 
+-- execsql {
+--       CREATE TABLE t2(a);
+--       INSERT INTO t2 VALUES(x'61006200630064006500');
+--       SELECT CAST(a AS text) FROM t2 WHERE a LIKE 'abc%';
+-- }
+CREATE TABLE t2(a);
+INSERT INTO t2 VALUES(x'61006200630064006500');
+SELECT CAST(a AS text) FROM t2 WHERE a LIKE 'abc%';

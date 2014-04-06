@@ -1,0 +1,20 @@
+-- tkt3911.test
+-- 
+-- execsql {
+--     CREATE TABLE t1(a,b);
+--     INSERT INTO t1 VALUES(1,2);
+--     INSERT INTO t1 VALUES(11,12);
+-- 
+--     CREATE TABLE t2(b,c);
+--     INSERT INTO t2 VALUES(2,3);
+--     INSERT INTO t2 VALUES(22,23);
+-- 
+--     SELECT * FROM t1 JOIN t2 USING(b);
+-- }
+CREATE TABLE t1(a,b);
+INSERT INTO t1 VALUES(1,2);
+INSERT INTO t1 VALUES(11,12);
+CREATE TABLE t2(b,c);
+INSERT INTO t2 VALUES(2,3);
+INSERT INTO t2 VALUES(22,23);
+SELECT * FROM t1 JOIN t2 USING(b);

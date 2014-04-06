@@ -1,0 +1,14 @@
+-- vtab6.test
+-- 
+-- execsql {
+--     BEGIN;
+--     INSERT INTO t12 VALUES(1,11);
+--     INSERT INTO t12 VALUES(2,22);
+--     INSERT INTO t13 VALUES(22,222);
+--     COMMIT;
+-- }
+BEGIN;
+INSERT INTO t12 VALUES(1,11);
+INSERT INTO t12 VALUES(2,22);
+INSERT INTO t13 VALUES(22,222);
+COMMIT;

@@ -1,0 +1,12 @@
+-- fkey2.test
+-- 
+-- execsql {
+--     CREATE TABLE t1(a PRIMARY KEY, b);
+--     INSERT INTO t1 VALUES('a', 1);
+--     CREATE TABLE t2(x REFERENCES t1);
+--     INSERT INTO t2 VALUES('a');
+-- }
+CREATE TABLE t1(a PRIMARY KEY, b);
+INSERT INTO t1 VALUES('a', 1);
+CREATE TABLE t2(x REFERENCES t1);
+INSERT INTO t2 VALUES('a');

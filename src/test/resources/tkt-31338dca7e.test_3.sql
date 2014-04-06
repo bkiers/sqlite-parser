@@ -1,0 +1,29 @@
+-- tkt-31338dca7e.test
+-- 
+-- db eval {
+--     CREATE TABLE t3(v,w);
+--     CREATE TABLE t4(x,y);
+--     CREATE TABLE t5(z);
+--     INSERT INTO t3 VALUES(111,222);
+--     INSERT INTO t3 VALUES(333,444);
+--     INSERT INTO t4 VALUES(222,333);
+--     INSERT INTO t4 VALUES(444,555);
+--     INSERT INTO t5 VALUES(888);
+--     INSERT INTO t5 VALUES(999);
+--     
+--     SELECT * FROM t3, t4, t5
+--      WHERE (v=111 AND x=w AND z!=999) OR (v=333 AND x=444)
+--      ORDER BY v, w, x, y, z;
+-- }
+CREATE TABLE t3(v,w);
+CREATE TABLE t4(x,y);
+CREATE TABLE t5(z);
+INSERT INTO t3 VALUES(111,222);
+INSERT INTO t3 VALUES(333,444);
+INSERT INTO t4 VALUES(222,333);
+INSERT INTO t4 VALUES(444,555);
+INSERT INTO t5 VALUES(888);
+INSERT INTO t5 VALUES(999);
+SELECT * FROM t3, t4, t5
+WHERE (v=111 AND x=w AND z!=999) OR (v=333 AND x=444)
+ORDER BY v, w, x, y, z;

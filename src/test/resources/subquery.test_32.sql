@@ -1,0 +1,16 @@
+-- subquery.test
+-- 
+-- execsql {
+--       CREATE TABLE t1(a,b);
+--       INSERT INTO t1 VALUES(1,2);
+--       CREATE VIEW v1 AS SELECT b FROM t1 WHERE a>0;
+--       CREATE TABLE t2(p,q);
+--       INSERT INTO t2 VALUES(2,9);
+--       SELECT * FROM v1 WHERE EXISTS(SELECT * FROM t2 WHERE p=v1.b);
+-- }
+CREATE TABLE t1(a,b);
+INSERT INTO t1 VALUES(1,2);
+CREATE VIEW v1 AS SELECT b FROM t1 WHERE a>0;
+CREATE TABLE t2(p,q);
+INSERT INTO t2 VALUES(2,9);
+SELECT * FROM v1 WHERE EXISTS(SELECT * FROM t2 WHERE p=v1.b);

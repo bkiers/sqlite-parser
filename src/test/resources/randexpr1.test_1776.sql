@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT coalesce((select max(17) from t1 where (e* -t1.f*e*c-coalesce((select max(t1.f) from t1 where t1.c between case when e+~ -t1.e+11 in (select c from t1 union select t1.a from t1) and t1.d>=c then 19 else ( - -(t1.a)) end*c+f and t1.b),13) not in (t1.b,e,t1.c) and (11) not in (b,( -t1.b),13))),19) FROM t1 WHERE NOT (d>e+f)}
+SELECT coalesce((select max(17) from t1 where (e* -t1.f*e*c-coalesce((select max(t1.f) from t1 where t1.c between case when e+~ -t1.e+11 in (select c from t1 union select t1.a from t1) and t1.d>=c then 19 else ( - -(t1.a)) end*c+f and t1.b),13) not in (t1.b,e,t1.c) and (11) not in (b,( -t1.b),13))),19) FROM t1 WHERE NOT (d>e+f)

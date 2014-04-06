@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT coalesce((select t1.b from t1 where 17+13+t1.b in (e,19,case when 17 in (select case max(b*17-d*t1.b*t1.d)+case max((19)) when ~ -max(t1.f) then +count(*) else cast(avg(13) AS integer) end when count(distinct 11) then min(e) else max(t1.c) end from t1 union select min(d) from t1) then t1.a* -(t1.a) when t1.c=19 then (t1.c) else t1.f end) and t1.f<=13),17) FROM t1 WHERE t1.e<>~t1.b}
+SELECT coalesce((select t1.b from t1 where 17+13+t1.b in (e,19,case when 17 in (select case max(b*17-d*t1.b*t1.d)+case max((19)) when ~ -max(t1.f) then +count(*) else cast(avg(13) AS integer) end when count(distinct 11) then min(e) else max(t1.c) end from t1 union select min(d) from t1) then t1.a* -(t1.a) when t1.c=19 then (t1.c) else t1.f end) and t1.f<=13),17) FROM t1 WHERE t1.e<>~t1.b

@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT d+case when (coalesce((select max(t1.a) from t1 where t1.a not in (t1.d,f*(select count(distinct t1.d) from t1)+t1.f,c)),b)-c-17-t1.c)-case when 13*t1.a-19*e<>11 then f when t1.f not between 11 and t1.d then b else f end=t1.d then t1.f when not e>t1.f then 17 else b end FROM t1 WHERE NOT (exists(select 1 from t1 where 11* -d>=e) or t1.c<+ -e*11 or (17 not between t1.d and case t1.a when t1.a then t1.d+f-b else 11 end | t1.e))}
+SELECT d+case when (coalesce((select max(t1.a) from t1 where t1.a not in (t1.d,f*(select count(distinct t1.d) from t1)+t1.f,c)),b)-c-17-t1.c)-case when 13*t1.a-19*e<>11 then f when t1.f not between 11 and t1.d then b else f end=t1.d then t1.f when not e>t1.f then 17 else b end FROM t1 WHERE NOT (exists(select 1 from t1 where 11* -d>=e) or t1.c<+ -e*11 or (17 not between t1.d and case t1.a when t1.a then t1.d+f-b else 11 end | t1.e))

@@ -1,0 +1,16 @@
+-- update.test
+-- 
+-- execsql {
+--     BEGIN;
+--     INSERT INTO t2 SELECT a+2048 FROM t2;
+--     INSERT INTO t2 SELECT a+4096 FROM t2;
+--     INSERT INTO t2 SELECT a+8192 FROM t2;
+--     SELECT count(*) FROM t2 WHERE a=rowid;
+--     COMMIT;
+-- }
+BEGIN;
+INSERT INTO t2 SELECT a+2048 FROM t2;
+INSERT INTO t2 SELECT a+4096 FROM t2;
+INSERT INTO t2 SELECT a+8192 FROM t2;
+SELECT count(*) FROM t2 WHERE a=rowid;
+COMMIT;

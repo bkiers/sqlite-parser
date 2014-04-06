@@ -1,0 +1,10 @@
+-- join6.test
+-- 
+-- execsql {
+--     SELECT * FROM
+--        (SELECT 1 AS a, 91 AS x, 92 AS y UNION SELECT 2, 93, 94)
+--        NATURAL JOIN t2 NATURAL JOIN t3
+-- }
+SELECT * FROM
+(SELECT 1 AS a, 91 AS x, 92 AS y UNION SELECT 2, 93, 94)
+NATURAL JOIN t2 NATURAL JOIN t3

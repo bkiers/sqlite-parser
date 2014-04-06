@@ -1,0 +1,10 @@
+-- tkt1473.test
+-- 
+-- execsql {
+--     SELECT EXISTS (
+--       SELECT 1 FROM t2 WHERE x=1 INTERSECT SELECT 1 FROM t2 WHERE y=0
+--     )
+-- }
+SELECT EXISTS (
+SELECT 1 FROM t2 WHERE x=1 INTERSECT SELECT 1 FROM t2 WHERE y=0
+)

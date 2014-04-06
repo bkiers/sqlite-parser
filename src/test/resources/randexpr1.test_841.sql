@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT t1.c-(abs((select (case abs(count(distinct 11-c*11)) when count(*) then count(*) else  -min(+e+~e+coalesce((select d-a*t1.d+t1.e from t1 where (t1.f>=17) and t1.e in (11,a,e)),13)*t1.d) end) from t1)-(a-t1.f)-t1.d)/abs(d)) FROM t1 WHERE t1.c in (select d from t1 union select ( -t1.e) from t1)}
+SELECT t1.c-(abs((select (case abs(count(distinct 11-c*11)) when count(*) then count(*) else  -min(+e+~e+coalesce((select d-a*t1.d+t1.e from t1 where (t1.f>=17) and t1.e in (11,a,e)),13)*t1.d) end) from t1)-(a-t1.f)-t1.d)/abs(d)) FROM t1 WHERE t1.c in (select d from t1 union select ( -t1.e) from t1)

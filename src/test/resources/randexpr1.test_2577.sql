@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT 19+t1.d+d-t1.c*case when 11 not between e and ~c+(select min((abs(t1.b*t1.b)/abs(+t1.c-e))) from t1) then 17 when case when 17*13 not in (t1.b,(abs(~c)/abs( -17-e)),(t1.e)) then 17 else (t1.c) end+c+t1.f not in (t1.f,19,t1.f) then  -t1.e else t1.f end FROM t1 WHERE (+13) between +b and t1.e+11}
+SELECT 19+t1.d+d-t1.c*case when 11 not between e and ~c+(select min((abs(t1.b*t1.b)/abs(+t1.c-e))) from t1) then 17 when case when 17*13 not in (t1.b,(abs(~c)/abs( -17-e)),(t1.e)) then 17 else (t1.c) end+c+t1.f not in (t1.f,19,t1.f) then  -t1.e else t1.f end FROM t1 WHERE (+13) between +b and t1.e+11

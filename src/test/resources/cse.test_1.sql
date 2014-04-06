@@ -1,0 +1,10 @@
+-- cse.test
+-- 
+-- execsql {
+--     CREATE TABLE t1(a INTEGER PRIMARY KEY, b, c, d, e, f);
+--     INSERT INTO t1 VALUES(1,11,12,13,14,15);
+--     INSERT INTO t1 VALUES(2,21,22,23,24,25);
+-- }
+CREATE TABLE t1(a INTEGER PRIMARY KEY, b, c, d, e, f);
+INSERT INTO t1 VALUES(1,11,12,13,14,15);
+INSERT INTO t1 VALUES(2,21,22,23,24,25);

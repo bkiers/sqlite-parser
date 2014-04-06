@@ -1,0 +1,16 @@
+-- tkt-d82e3f3721.test
+-- 
+-- db eval {
+--     CREATE TEMP TABLE t2(a INTEGER PRIMARY KEY AUTOINCREMENT, b);
+--     INSERT INTO t2 VALUES(null,'jkl');
+--     INSERT INTO t2 VALUES(null,'mno');
+--     DELETE FROM t2;
+--     INSERT INTO t2 VALUES(null,'pqr');
+--     SELECT * FROM t2;
+-- }
+CREATE TEMP TABLE t2(a INTEGER PRIMARY KEY AUTOINCREMENT, b);
+INSERT INTO t2 VALUES(null,'jkl');
+INSERT INTO t2 VALUES(null,'mno');
+DELETE FROM t2;
+INSERT INTO t2 VALUES(null,'pqr');
+SELECT * FROM t2;

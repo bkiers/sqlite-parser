@@ -1,0 +1,4 @@
+-- indexedby.test
+-- 
+-- execsql {EXPLAIN QUERY PLAN DROP TABLE X}
+EXPLAIN QUERY PLAN DROP TABLE X

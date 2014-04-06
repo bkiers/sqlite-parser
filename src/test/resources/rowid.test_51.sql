@@ -1,0 +1,6 @@
+-- rowid.test
+-- 
+-- execsql {
+--       SELECT b FROM t2 WHERE a NOT IN(1,2,1000000,1000001,2147483647);
+-- }
+SELECT b FROM t2 WHERE a NOT IN(1,2,1000000,1000001,2147483647);

@@ -1,0 +1,4 @@
+-- wherelimit.test
+-- 
+-- execsql {UPDATE t1 SET y=4 WHERE x=6 ORDER BY x LIMIT 5 OFFSET 5}
+UPDATE t1 SET y=4 WHERE x=6 ORDER BY x LIMIT 5 OFFSET 5

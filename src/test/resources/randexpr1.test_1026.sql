@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT 11-(select min((abs(e)/abs(f*t1.e*c+17+~case when f | 11 between (select case  -max(19) when (cast(avg(t1.a) AS integer)) then count(distinct t1.f) else count(*) end from t1) and coalesce((select 13 from t1 where a<=(t1.d)),f)-a then t1.a when f in (select 17 from t1 union select  -b from t1) and t1.d<a or d<>(17) or 19>=d then (f) else 11 end))) from t1) FROM t1 WHERE e in (e, -17*t1.c*17,e)}
+SELECT 11-(select min((abs(e)/abs(f*t1.e*c+17+~case when f | 11 between (select case  -max(19) when (cast(avg(t1.a) AS integer)) then count(distinct t1.f) else count(*) end from t1) and coalesce((select 13 from t1 where a<=(t1.d)),f)-a then t1.a when f in (select 17 from t1 union select  -b from t1) and t1.d<a or d<>(17) or 19>=d then (f) else 11 end))) from t1) FROM t1 WHERE e in (e, -17*t1.c*17,e)

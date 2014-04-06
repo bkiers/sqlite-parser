@@ -1,0 +1,4 @@
+-- expr.test
+-- 
+-- execsql {SELECT CURRENT_TIMESTAMP}
+SELECT CURRENT_TIMESTAMP

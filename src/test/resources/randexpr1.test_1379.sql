@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT case +c when 19*t1.b*coalesce((select t1.b-(19* -case when (coalesce((select t1.a from t1 where c>=e or t1.a not in (t1.c,e,t1.f)),t1.b)+19<=t1.a) then ((b)) when d>=b or d not between 19 and t1.e then t1.c else t1.b end-t1.a*f) from t1 where 13 between t1.f and t1.b or e not in (t1.e,b,19)),t1.a) then d else t1.a end FROM t1 WHERE  -b>=(select max(19) from t1)}
+SELECT case +c when 19*t1.b*coalesce((select t1.b-(19* -case when (coalesce((select t1.a from t1 where c>=e or t1.a not in (t1.c,e,t1.f)),t1.b)+19<=t1.a) then ((b)) when d>=b or d not between 19 and t1.e then t1.c else t1.b end-t1.a*f) from t1 where 13 between t1.f and t1.b or e not in (t1.e,b,19)),t1.a) then d else t1.a end FROM t1 WHERE  -b>=(select max(19) from t1)

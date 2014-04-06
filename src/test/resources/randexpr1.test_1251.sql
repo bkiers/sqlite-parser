@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT (abs((abs(t1.a)/abs(~17 | coalesce((select ~coalesce((select (d) from t1 where t1.b>=t1.a),case when t1.e-(select ~max( -19*c | e+t1.c) from t1) not between (abs(c)/abs(e)) and t1.e then a else 17 end*17)+13 from t1 where a in (select max(t1.f) from t1 union select ~count(distinct b) from t1)),b) | 13)))/abs(e)) FROM t1 WHERE exists(select 1 from t1 where t1.a+t1.d-11<=t1.e)}
+SELECT (abs((abs(t1.a)/abs(~17 | coalesce((select ~coalesce((select (d) from t1 where t1.b>=t1.a),case when t1.e-(select ~max( -19*c | e+t1.c) from t1) not between (abs(c)/abs(e)) and t1.e then a else 17 end*17)+13 from t1 where a in (select max(t1.f) from t1 union select ~count(distinct b) from t1)),b) | 13)))/abs(e)) FROM t1 WHERE exists(select 1 from t1 where t1.a+t1.d-11<=t1.e)

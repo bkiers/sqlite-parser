@@ -1,0 +1,24 @@
+-- e_fkey.test
+-- 
+-- execsql {
+--     PRAGMA foreign_keys = OFF;
+-- 
+--     CREATE TABLE p(a PRIMARY KEY, b REFERENCES nosuchtable);
+--     CREATE TABLE c1(c, d, FOREIGN KEY(c, d) REFERENCES a);
+--     CREATE TABLE c2(c REFERENCES p(b), d);
+--     CREATE TABLE c3(c REFERENCES p ON DELETE SET NULL, d);
+-- 
+--     INSERT INTO p VALUES(1, 2);
+--     INSERT INTO c1 VALUES(1, 2);
+--     INSERT INTO c2 VALUES(1, 2);
+--     INSERT INTO c3 VALUES(1, 2);
+-- }
+PRAGMA foreign_keys = OFF;
+CREATE TABLE p(a PRIMARY KEY, b REFERENCES nosuchtable);
+CREATE TABLE c1(c, d, FOREIGN KEY(c, d) REFERENCES a);
+CREATE TABLE c2(c REFERENCES p(b), d);
+CREATE TABLE c3(c REFERENCES p ON DELETE SET NULL, d);
+INSERT INTO p VALUES(1, 2);
+INSERT INTO c1 VALUES(1, 2);
+INSERT INTO c2 VALUES(1, 2);
+INSERT INTO c3 VALUES(1, 2);

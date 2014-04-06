@@ -1,0 +1,10 @@
+-- vtabD.test
+-- 
+-- execsql {
+--   SELECT * FROM t1 WHERE a < 90000
+--     UNION ALL
+--   SELECT * FROM t1 WHERE b = 8100000000 AND NOT (a < 90000)
+-- }
+SELECT * FROM t1 WHERE a < 90000
+UNION ALL
+SELECT * FROM t1 WHERE b = 8100000000 AND NOT (a < 90000)

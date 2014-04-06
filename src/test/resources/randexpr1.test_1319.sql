@@ -1,0 +1,4 @@
+-- randexpr1.test
+-- 
+-- db eval {SELECT  -t1.a*(select (cast(avg((select count(*)-abs(count(*)*count(*)) from t1)) AS integer)++max(t1.d))*cast(avg(t1.a) AS integer) from t1)+t1.c+t1.c+d-e | 11+t1.b-coalesce((select max(case when exists(select 1 from t1 where t1.a+11=t1.b) then c when t1.a not between t1.f and t1.d or 13<11 then  -b else 19 end) from t1 where c>=t1.f),t1.f) FROM t1 WHERE exists(select 1 from t1 where (f=(d)*e))}
+SELECT  -t1.a*(select (cast(avg((select count(*)-abs(count(*)*count(*)) from t1)) AS integer)++max(t1.d))*cast(avg(t1.a) AS integer) from t1)+t1.c+t1.c+d-e | 11+t1.b-coalesce((select max(case when exists(select 1 from t1 where t1.a+11=t1.b) then c when t1.a not between t1.f and t1.d or 13<11 then  -b else 19 end) from t1 where c>=t1.f),t1.f) FROM t1 WHERE exists(select 1 from t1 where (f=(d)*e))
