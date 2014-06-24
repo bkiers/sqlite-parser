@@ -1,6 +1,6 @@
 # SQLite parser
 
-An ANTLR4 grammar for SQLite based on [the official specs](http://www.sqlite.org/syntaxdiagrams.html).
+An ANTLR4 grammar for SQLite 3.8.x based on [the official specs](http://www.sqlite.org/syntaxdiagrams.html).
 
 ## Install
 
