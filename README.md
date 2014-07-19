@@ -1,4 +1,4 @@
-# SQLite parser &nbsp; [![Build Status](https://travis-ci.org/bkiers/sqlite-parser.png)](https://travis-ci.org/bkiers/sqlite-parser)
+# SQLite parser
 
 An ANTLR4 grammar for SQLite 3.8.x based on [the official specs](http://www.sqlite.org/syntaxdiagrams.html).
 
