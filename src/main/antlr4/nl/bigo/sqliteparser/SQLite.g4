@@ -667,8 +667,10 @@ savepoint_name
  : any_name
  ;
 
-table_alias 
- : any_name
+table_alias
+ : IDENTIFIER
+ | STRING_LITERAL
+ | '(' table_alias ')'
  ;
 
 transaction_name
