@@ -11,7 +11,7 @@
     <name>sqlite-parser</name>
 
     <properties>
-        <antlr4.version>4.2.1</antlr4.version>
+        <antlr4.version>4.3</antlr4.version>
     </properties>
 
     <dependencies>
