@@ -11,7 +11,7 @@ import org.junit.Test;
 import java.io.*;
 import java.util.Scanner;
 
-public class ParserTest {
+public class IntegrationTest {
 
     // A counter that keeps track of the total amount of statements
     // parsed in the test below.
@@ -22,7 +22,6 @@ public class ParserTest {
 
         // Retrieve all files from `src/test/resources` ending with ".sql".
         File[] tests = new File("src/test/resources").listFiles(new FileFilter() {
-            @Override
             public boolean accept(File file) {
                 return file.isFile() && file.getName().endsWith(".sql");
             }
