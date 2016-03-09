@@ -319,7 +319,7 @@ expr
  | expr ( '+' | '-' ) expr
  | expr ( '<<' | '>>' | '&' | '|' ) expr
  | expr ( '<' | '<=' | '>' | '>=' ) expr
- | expr ( '=' | '==' | '!=' | '<>' | K_IS | K_IS K_NOT | K_IN | K_LIKE | K_GLOB | K_MATCH | K_REGEXP ) expr
+ | expr ( '=' | '==' | '!=' | '<>' ) expr
  | expr K_AND expr
  | expr K_OR expr
  | function_name '(' ( K_DISTINCT? expr ( ',' expr )* | '*' )? ')'
