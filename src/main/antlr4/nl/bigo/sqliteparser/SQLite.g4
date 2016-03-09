@@ -401,9 +401,10 @@ result_column
  ;
 
 table_or_subquery
- : ( database_name '.' )? table_name ( K_AS? table_alias )?
+ : ( schema_name '.' )? table_name ( K_AS? table_alias )?
    ( K_INDEXED K_BY index_name
    | K_NOT K_INDEXED )?
+ | ( schema_name '.' )? table_function_name '(' ( expr ( ',' expr )* )? ')' ( K_AS? table_alias )?
  | '(' ( table_or_subquery ( ',' table_or_subquery )*
        | join_clause )
    ')'
@@ -616,6 +617,14 @@ function_name
  ;
 
 database_name
+ : any_name
+ ;
+
+schema_name
+ : any_name
+ ;
+
+table_function_name
  : any_name
  ;
 
