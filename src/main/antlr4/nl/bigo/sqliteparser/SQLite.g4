@@ -277,7 +277,7 @@ type_name
 column_constraint
  : ( K_CONSTRAINT name )?
    ( K_PRIMARY K_KEY ( K_ASC | K_DESC )? conflict_clause K_AUTOINCREMENT?
-   | K_NOT? K_NULL conflict_clause
+   | K_NOT K_NULL conflict_clause
    | K_UNIQUE conflict_clause
    | K_CHECK '(' expr ')'
    | K_DEFAULT (signed_number | literal_value | '(' expr ')')
@@ -687,8 +687,7 @@ transaction_name
  ;
 
 any_name
- : IDENTIFIER 
- | keyword
+ : IDENTIFIER
  | STRING_LITERAL
  | '(' any_name ')'
  ;
