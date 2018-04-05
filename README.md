@@ -16,11 +16,18 @@ mvn clean install -DskipTests=true
 
 The generated parser has been tested by approximately 30000 SQLite statements
 scraped from the [test suite](http://www.sqlite.org/src/tree?ci=trunk&name=test)
-of the SQLite repository. Running these tests, which can take 2 or more minutes,
+of the SQLite repository. Running these tests, which can take quite a few minutes,
 can be done as follows:
 
 ```bash
 mvn clean test
+```
+
+If running the tests takes too long for your liking, try increasing the max heap 
+space as follows:
+
+```bash
+export JAVA_TOOL_OPTIONS="-Xmx4096m" && mvn clean test
 ```
 
 ## Example
