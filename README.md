@@ -1,5 +1,8 @@
 # SQLite parser
 
+NOTE: this grammar/repo is not actively maintained. Consider looking at a more recent 
+version of this grammar in the [ANTLR grammars repository](https://github.com/antlr/grammars-v4/tree/master/sql/sqlite).
+
 An ANTLR4 grammar for SQLite 3.8.x based on [the official specs](http://www.sqlite.org/syntaxdiagrams.html).
 
 ## Install
